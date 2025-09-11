@@ -5,33 +5,33 @@ import React, { useState } from 'react';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className="bg-camel-500 text-white relative">
-      <div className="flex items-center justify-between px-6 py-4">
+    <header className="bg-camel-500 text-white relative h-[768]">
+      <div className="flex items-center justify-between px-15 py-1">
         {/* Logo */}
-        <div className="text-xl font-bold tracking-wide">
+        <div className="text-3xl font-bold tracking-wide">
           CAMELWEB
         </div>
        
         {/* Hamburger Menu */}
         <button
-          className="flex flex-col space-y-1 cursor-pointer relative z-10"
+          className="flex flex-col space-y-2 cursor-pointer relative z-10"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
+          <div className="w-9 h-0.5 bg-white"></div>
+          <div className="w-9 h-0.5 bg-white"></div>
           <div className="w-6 h-0.5 bg-white"></div>
-          <div className="w-6 h-0.5 bg-white"></div>
-          <div className="w-4 h-0.5 bg-white"></div>
         </button>
       </div>
      
       {/* Full-width horizontal line */}
-      <div className="px-6">
-        <div className="h-px bg-white"></div>
+      <div className="px-6 py-4">
+        <div className="w-[1250] mx-auto h-px bg-white"></div>
       </div>
      
       {/* Mobile menu dropdown - positioned under hamburger menu */}
       {isMenuOpen && (
-        <div className="absolute top-full right-0 bg-camel-500 border-t border-white/20 shadow-lg z-20">
+        <div className="absolute top-full right-0 bg-camel-500 border-t border-white/20 shadow-lg">
           <nav className="py-2">
             <a href="#" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Photography</a>
             <a href="#" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Applications</a>
@@ -40,31 +40,20 @@ const Header = () => {
           </nav>
         </div>
       )}
-    </header>
-  );
-};
-
-export default function Home() {
-  return (
-    <div className="max-w-[1366px] mx-auto">
-      <Header />
-      
-      {/* Hero Section */}
-      <section className="bg-camel-500 text-white relative">
-        <div className="px-6 py-16">
+        <div className="px-6 py-33">
           {/* Photography label */}
-          <p className="text-center text-lg mb-8 font-medium tracking-wide">
+          <p className="text-center text-3xl mb-8 font-medium tracking-wide">
             Photography
           </p>
           
           {/* Main headline */}
-          <h1 className="text-center text-3xl mb-18 md:text-4xl lg:text-5xl font-semibold leading-relaxed max-w-4xl mx-auto">
+          <h1 className="text-center md:text-4xl lg:text-6xl font-semibold leading-relaxed max-w-4xl mx-auto">
             The photographs act as a support system for everything CamelWeb stands for.
           </h1>
         </div>
         
         {/* Down arrow */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 py-14">
           <button 
             onClick={() => {
               document.getElementById('photography-section')?.scrollIntoView({behavior: 'smooth'})
@@ -76,19 +65,27 @@ export default function Home() {
         </div>
         
         {/* Left and Right arrows */}
-        <div className="absolute bottom-12 right-12 flex space-x-3">
-          <button className="w-10 h-10 rounded-full bg-black bg-opacity-20 flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
+        <div className="absolute bottom-14 right-15 flex space-x-3 py-5">
+          <button className="w-8 h-8 rounded-full bg-black bg-opacity-20 flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
-          <button className="w-10 h-10 rounded-full bg-black bg-opacity-20 flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
+          <button className="w-8 h-8 rounded-full bg-black bg-opacity-20 flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
         </div>
-      </section>
+    </header>
+  );
+};
+
+export default function Home() {
+  return (
+    <div className="max-w-[1366px] mx-auto">
+      <Header />
+      
       {/* Location Photography Section */}
       <section id ="photography-section" className="bg-white">
         <div className="px-6 py-16">
