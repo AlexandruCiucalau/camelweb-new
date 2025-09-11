@@ -46,7 +46,7 @@ const Header = () => {
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="max-w-[1366px] mx-auto">
       <Header />
       
       {/* Hero Section */}
