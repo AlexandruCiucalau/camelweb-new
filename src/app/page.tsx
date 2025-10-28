@@ -68,15 +68,15 @@ const Header = () => {
       </div>
       
       {/* Left and Right arrows */}
-      <div className="absolute bottom-14 right-15 flex space-x-3 py-5">
-        <button className="w-8 h-8 rounded-full bg-black bg-opacity-20 flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
+      <div className="absolute bottom-14 right-15 flex space-x-5 py-5">
+        <button className="w-8 h-8 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
-        <button className="w-8 h-8 rounded-full bg-black bg-opacity-20 flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
+        <button className="w-8 h-8 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
           </svg>
         </button>
       </div>
