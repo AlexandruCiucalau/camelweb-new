@@ -91,7 +91,7 @@ export default function Home() {
       
       
       {/* Location Photography Section */}
-      <section id ="photography-section" className="bg-white max-w-[1245] mx-auto">
+      <section id ="photography-section" className="bg-white max-w-[1246] mx-auto">
         
         <div className="px-6 py-8">
           {/* Full-width orange line */}
@@ -135,7 +135,7 @@ export default function Home() {
       </section>
 
       {/* Photo Grid Section */}
-      <section className="bg-white max-w-[1245] mx-auto">
+      <section className="bg-white max-w-[1246] mx-auto">
         <div className="px-6 pb-16">
           {/* Photo Grid */}
           <div className="grid grid-cols-2 gap-4 max-w-6xl max-w-[1366px] mx-auto">
@@ -182,13 +182,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-white">
+      <section className="bg-white max-w-[1247] mx-auto">
         <div className="px-6 py-10">
           <div className="h-px bg-black"></div>
         </div>
       </section>
 
-      <section className="bg-white">
+      <section className="bg-white max-w-[1247] h-[127] mx-auto mb-10">
         <div className="px-6 py-10">
           {/* Next label */}
           <p className="text-medium mb-2">Next</p>
@@ -205,8 +205,8 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="bg-gray-50 border-t border-gray-200">
-        <div className="px-6 py-8">
+      <footer className="bg-gray-50 border-t border-gray-200 ">
+        <div className="px-6 py-8 max-w-[1366] h-[244] mx-auto">
           {/* Main Footer Content */}
           <div className="flex items-center justify-between mb-6">
             {/* Logo/Brand */}
