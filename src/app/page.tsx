@@ -138,7 +138,7 @@ export default function Home() {
       <section className="bg-white">
         <div className="px-6 pb-16">
           {/* Photo Grid */}
-          <div className="grid grid-cols-2 gap-4 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 gap-4 max-w-6xl max-w-[1366px] mx-auto">
             {/* Top row */}
             <div className="aspect-[4/3]">
               <img 
