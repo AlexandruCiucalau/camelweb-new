@@ -11,72 +11,75 @@ const Header = () => {
         <div className="text-3xl font-bold tracking-wide">
           CAMELWEB
         </div>
-       
-        {/* Hamburger Menu */}
-        <button
-          className="flex flex-col space-y-2 cursor-pointer relative z-10"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          <div className="w-9 h-0.5 bg-white"></div>
-          <div className="w-9 h-0.5 bg-white"></div>
-          <div className="w-6 h-0.5 bg-white"></div>
-        </button>
+      
+        {/* Hamburger Menu*/}
+        <div className="relative">
+          <button
+            className="flex flex-col space-y-2 cursor-pointer z-10"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <div className="w-9 h-0.5 bg-white"></div>
+            <div className="w-9 h-0.5 bg-white"></div>
+            <div className="w-6 h-0.5 bg-white"></div>
+          </button>
+        
+          {/* Mobile menu dropdown*/}
+          {isMenuOpen && (
+            <div className="absolute right-0 mt-3 bg-camel-500 border border-white/20 shadow-lg rounded-md">
+              <nav className="py-2">
+                <a href="#" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Photography</a>
+                <a href="#" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Applications</a>
+                <a href="#" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">About</a>
+                <a href="#" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Contact</a>
+              </nav>
+            </div>
+          )}
+        </div>
       </div>
-     
-      {/* Full-width horizontal line */}
+      
+      {/* Full-width horizontal line*/}
       <div className="px-6 py-4">
         <div className="w-[1250] mx-auto h-px bg-white"></div>
       </div>
-     
-      {/* Mobile menu dropdown - positioned under hamburger menu */}
-      {isMenuOpen && (
-        <div className="absolute top-full right-0 bg-camel-500 border-t border-white/20 shadow-lg">
-          <nav className="py-2">
-            <a href="#" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Photography</a>
-            <a href="#" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Applications</a>
-            <a href="#" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">About</a>
-            <a href="#" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Contact</a>
-          </nav>
-        </div>
-      )}
-        <div className="px-6 py-33">
-          {/* Photography label */}
-          <p className="text-center text-3xl mb-8 font-medium tracking-wide">
-            Photography
-          </p>
-          
-          {/* Main headline */}
-          <h1 className="text-center md:text-4xl lg:text-6xl font-semibold leading-relaxed max-w-4xl mx-auto">
-            The photographs act as a support system for everything CamelWeb stands for.
-          </h1>
-        </div>
         
-        {/* Down arrow */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 py-14">
-          <button 
-            onClick={() => {
-              document.getElementById('photography-section')?.scrollIntoView({behavior: 'smooth'})
-            }} className="text-white opacity-70 hover:opacity-100 transition-opacity">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </button>
-        </div>
+      <div className="px-6 py-33">
+        {/* Photography label */}
+        <p className="text-center text-3xl mb-8 font-medium tracking-wider">
+          Photography
+        </p>
         
-        {/* Left and Right arrows */}
-        <div className="absolute bottom-14 right-15 flex space-x-3 py-5">
-          <button className="w-8 h-8 rounded-full bg-black bg-opacity-20 flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button className="w-8 h-8 rounded-full bg-black bg-opacity-20 flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
+        {/* Main headline */}
+        <h1 className="text-center lg:text-6xl font-semibold leading-21 tracking-wide max-w-4xl mx-auto">
+          The photographs act as a support system for everything CamelWeb stands for.
+        </h1>
+      </div>
+      
+      {/* Down arrow */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 py-14">
+        <button 
+          onClick={() => {
+            document.getElementById('photography-section')?.scrollIntoView({behavior: 'smooth'})
+          }} className="text-white opacity-70 hover:opacity-100 transition-opacity">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+        </button>
+      </div>
+      
+      {/* Left and Right arrows */}
+      <div className="absolute bottom-14 right-15 flex space-x-3 py-5">
+        <button className="w-8 h-8 rounded-full bg-black bg-opacity-20 flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button className="w-8 h-8 rounded-full bg-black bg-opacity-20 flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
     </header>
   );
 };
@@ -86,37 +89,45 @@ export default function Home() {
     <div className="max-w-[1366px] mx-auto">
       <Header />
       
+      
       {/* Location Photography Section */}
       <section id ="photography-section" className="bg-white">
-        <div className="px-6 py-16">
+        
+        <div className="px-6 py-8">
           {/* Full-width orange line */}
-          <div className="h-px bg-camel-500 mb-8"></div>
+          <div className="h-px bg-camel-500 mt-4 mb-3"></div>
           
           {/* Heading */}
-          <h2 className="text-2xl font-medium text-camel-500 mb-8">Location photography</h2>
+          <h2 className="text-3xl font-medium text-camel-500 mb-11">Location photography</h2>
           
           {/* Description */}
-          <div className="max-w-2xl mb-8 font-medium">
-            <p className="text-gray-700 leading-relaxed mb-4">
-              The location photography aims to show the CamelWeb offices and employees in order to communicate the brand's values.
+          <div className="mb-8 font-medium tracking-widest">
+            <p className="text-gray-700 leading-relaxed mb-2">
+              The location photography aims to show the CamelWeb offices and employees in order to <br></br> communicate the brand's values.
             </p>
-            <p className="text-gray-700 leading-relaxed mb-6">
+            <p className="text-gray-700 leading-relaxed mb-5">
               Thus, all images in this category must meet the following criteria:
             </p>
             
             {/* Criteria list */}
-            <div className="space-y-4 text-gray-700">
+            <div className="space-y-5 text-gray-700 -ml-1">
               <div className="flex items-start">
-                <span className="mr-4">→</span>
+                <svg className="w-4 h-4 mr-2 mt-1 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                  <path d="M2 2 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>  
                 <span>Warm, earthy tones and natural light.</span>
               </div>
               <div className="flex items-start">
-                <span className="mr-4">→</span>
+                <svg className="w-4 h-4 mr-2 mt-1 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                  <path d="M2 2 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>  
                 <span>CamelWeb employees while they enjoy themselves and their work.</span>
               </div>
               <div className="flex items-start">
-                <span className="mr-4">→</span>
-                <span>Approach different space perspectives, with close-ups of the people and wide frames of the office rooms.</span>
+                <svg className="w-4 h-4 mr-2 mt-3 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                  <path d="M2 2 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>      
+                <span>Approach different space perspectives, with close-ups of the people and wide frames of <br></br> the office rooms.</span>
               </div>
             </div>
           </div>
