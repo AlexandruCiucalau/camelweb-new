@@ -91,7 +91,7 @@ export default function Home() {
       
       
       {/* Location Photography Section */}
-      <section id ="photography-section" className="bg-white">
+      <section id ="photography-section" className="bg-white max-w-[1245] mx-auto">
         
         <div className="px-6 py-8">
           {/* Full-width orange line */}
@@ -135,7 +135,7 @@ export default function Home() {
       </section>
 
       {/* Photo Grid Section */}
-      <section className="bg-white">
+      <section className="bg-white max-w-[1245] mx-auto">
         <div className="px-6 pb-16">
           {/* Photo Grid */}
           <div className="grid grid-cols-2 gap-4 max-w-6xl max-w-[1366px] mx-auto">
