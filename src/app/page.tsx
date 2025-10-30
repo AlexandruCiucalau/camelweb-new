@@ -199,9 +199,9 @@ export default function Home() {
       {/* Location Photography Section */}
       <section id ="photography-section" className="bg-white w-[1245] mx-auto">
         
-        <div className="px-4 py-16">
+        <div className="">
           {/* Full-width orange line */}
-          <div className="h-px mx-auto bg-camel-500 mt-4 mb-3"></div>
+          <div className="h-px mx-auto bg-camel-500 mt-18 mb-3 "></div>
           
           {/* Heading */}
           <h2 className="text-3xl font-medium text-camel-500 mb-11">Location photography</h2>
