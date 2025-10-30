@@ -45,13 +45,19 @@ const Header = () => {
         
       <div className="px-6 py-33">
         {/* Photography label */}
-        <p className="text-center text-3xl mb-8 font-medium tracking-wider">
+        <p className="text-center text-3xl mb-9 font-medium tracking-wider">
           Photography
         </p>
         
         {/* Main headline */}
+        <h1 className="text-center lg:text-6xl font-semibold leading-21 tracking-widest max-w-4xl mx-auto">
+          The photographs act as a
+        </h1>
         <h1 className="text-center lg:text-6xl font-semibold leading-21 tracking-wide max-w-4xl mx-auto">
-          The photographs act as a support system for everything CamelWeb stands for.
+          support system for everything
+        </h1>
+        <h1 className="text-center lg:text-6xl font-semibold leading-21 tracking-widest max-w-4xl mx-auto">
+          CamelWeb stands for.
         </h1>
       </div>
       
@@ -102,8 +108,11 @@ export default function Home() {
           
           {/* Description */}
           <div className="mb-8 font-medium tracking-widest">
+            <p className="text-gray-700 leading-relaxed -mb-1">
+              The location photography aims to show the CamelWeb offices and employees in order to
+            </p>
             <p className="text-gray-700 leading-relaxed mb-2">
-              The location photography aims to show the CamelWeb offices and employees in order to <br></br> communicate the brand's values.
+              communicate the brand's values.
             </p>
             <p className="text-gray-700 leading-relaxed mb-5">
               Thus, all images in this category must meet the following criteria:
@@ -115,19 +124,19 @@ export default function Home() {
                 <svg className="w-4 h-4 mr-2 mt-1 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
                   <path d="M2 2 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>  
-                <span>Warm, earthy tones and natural light.</span>
+                <p>Warm, earthy tones and natural light.</p>
               </div>
               <div className="flex items-start">
                 <svg className="w-4 h-4 mr-2 mt-1 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
                   <path d="M2 2 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>  
-                <span>CamelWeb employees while they enjoy themselves and their work.</span>
+                <p>CamelWeb employees while they enjoy themselves and their work.</p>
               </div>
               <div className="flex items-start">
                 <svg className="w-4 h-4 mr-2 mt-3 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
                   <path d="M2 2 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>      
-                <span>Approach different space perspectives, with close-ups of the people and wide frames of <br></br> the office rooms.</span>
+                <p>Approach different space perspectives, with close-ups of the people and wide frames of <br></br> the office rooms.</p>
               </div>
             </div>
           </div>
