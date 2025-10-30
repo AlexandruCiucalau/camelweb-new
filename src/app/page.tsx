@@ -147,9 +147,9 @@ export default function Home() {
 
       {/* Photo Grid Section */}
       <section id="photo-grid" className="bg-white mx-auto">
-        <div className="px-6 pb-16 w-[1246] mx-auto">
+        <div className="w-[1246] mx-auto">
           {/* Photo Grid */}
-          <div className="grid grid-cols-2 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 gap-4 max-w-7xl mx-auto">
             {/* Top row */}
             <div className="aspect-[4/3] w-[609] h-[411]">
               <img 
@@ -194,7 +194,7 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-white w-[1247] mx-auto">
-        <div className="px-6 py-10">
+        <div className="py-10">
           <div className="h-px bg-black"></div>
         </div>
       </section>
