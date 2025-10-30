@@ -97,11 +97,11 @@ export default function Home() {
       
       
       {/* Location Photography Section */}
-      <section id ="photography-section" className="bg-white max-w-[1246] mx-auto">
+      <section id ="photography-section" className="bg-white w-[1245] mx-auto">
         
-        <div className="px-6 py-8">
+        <div className="px-4 py-16">
           {/* Full-width orange line */}
-          <div className="h-px bg-camel-500 mt-4 mb-3"></div>
+          <div className="h-px w-[1245] mx-auto bg-camel-500 mt-4 mb-3"></div>
           
           {/* Heading */}
           <h2 className="text-3xl font-medium text-camel-500 mb-11">Location photography</h2>
@@ -122,21 +122,23 @@ export default function Home() {
             <div className="space-y-5 text-gray-700 -ml-1">
               <div className="flex items-start">
                 <svg className="w-4 h-4 mr-2 mt-1 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
-                  <path d="M2 2 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 4 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>  
                 <p>Warm, earthy tones and natural light.</p>
               </div>
               <div className="flex items-start">
                 <svg className="w-4 h-4 mr-2 mt-1 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
-                  <path d="M2 2 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 4 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>  
                 <p>CamelWeb employees while they enjoy themselves and their work.</p>
               </div>
               <div className="flex items-start">
                 <svg className="w-4 h-4 mr-2 mt-3 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
-                  <path d="M2 2 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M2 4 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>      
-                <p>Approach different space perspectives, with close-ups of the people and wide frames of <br></br> the office rooms.</p>
+                <p className="text-gray-700 leading-relaxed mt-1 mb-2 whitespace-pre-line">
+                Approach different space perspectives, with close-ups of the people and wide frames of {"\n"} the office rooms.
+                </p>
               </div>
             </div>
           </div>
@@ -144,19 +146,19 @@ export default function Home() {
       </section>
 
       {/* Photo Grid Section */}
-      <section className="bg-white max-w-[1246] mx-auto">
-        <div className="px-6 pb-16">
+      <section className="bg-white mx-auto">
+        <div className="px-6 pb-16 w-[1246] mx-auto">
           {/* Photo Grid */}
-          <div className="grid grid-cols-2 gap-4 max-w-6xl max-w-[1366px] mx-auto">
+          <div className="grid grid-cols-2 gap-8 max-w-7xl mx-auto">
             {/* Top row */}
-            <div className="aspect-[4/3]">
+            <div className="aspect-[4/3] w-[609] h-[411]">
               <img 
                 src="/images/1.jpg" 
                 alt="CamelWeb employees in library area" 
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            <div className="aspect-[4/3]">
+            <div className="aspect-[4/3] w-[609] h-[411]">
               <img 
                 src="/images/2.jpg" 
                 alt="CamelWeb team meeting" 
@@ -165,14 +167,14 @@ export default function Home() {
             </div>
             
             {/* Middle row */}
-            <div className="aspect-[4/3]">
+            <div className="aspect-[4/3] w-[609] h-[411]">
               <img 
                 src="/images/3.jpg" 
                 alt="CamelWeb office space with plants" 
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            <div className="aspect-[4/3]">
+            <div className="aspect-[4/3] w-[609] h-[411]">
               <img 
                 src="/images/4.jpg" 
                 alt="CamelWeb conference room" 
@@ -181,7 +183,7 @@ export default function Home() {
             </div>
             
             {/* Bottom row  */}
-            <div className="col-span-2 aspect-[8/5]">
+            <div className="col-span-2 aspect-[8/5] w-[1246] h-[702]">
               <img 
                 src="/images/5.jpg" 
                 alt="CamelWeb office with city view" 
@@ -191,7 +193,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-white max-w-[1247] mx-auto">
+      <section className="bg-white w-[1247] mx-auto">
         <div className="px-6 py-10">
           <div className="h-px bg-black"></div>
         </div>
