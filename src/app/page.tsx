@@ -1,6 +1,12 @@
 "use client";
 
 import React, { useState } from 'react';
+import { Syne } from 'next/font/google';
+
+const syneFont = Syne({
+  subsets: ["latin"],
+  weight:"500",
+});
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,7 +14,7 @@ const Header = () => {
     <header className="bg-camel-500 text-white relative h-[768]">
       <div className="flex items-center justify-between px-15 py-1">
         {/* Logo */}
-        <div className="text-3xl font-bold tracking-wide">
+        <div className={`text-3xl font-bold tracking-wide ${syneFont.className}`}>
           CAMELWEB
         </div>
       
@@ -45,18 +51,17 @@ const Header = () => {
         
       <div className="px-6 py-33">
         {/* Photography label */}
-        <p className="text-center text-3xl mb-9 font-medium tracking-wider">
+        <p className={`text-center text-3xl mb-9 font-medium tracking-wide ${syneFont.className} font-weight:600`}>
           Photography
         </p>
-        
         {/* Main headline */}
-        <h1 className="text-center lg:text-6xl font-semibold leading-21 tracking-widest max-w-4xl mx-auto">
+        <h1 className={`text-center lg:text-6xl font-semibold leading-21 tracking-widest max-w-4xl mx-auto ${syneFont.className}`}>
           The photographs act as a
         </h1>
-        <h1 className="text-center lg:text-6xl font-semibold leading-21 tracking-wide max-w-4xl mx-auto">
+        <h1 className={`text-center lg:text-6xl font-semibold leading-21 tracking-wide max-w-4xl mx-auto ${syneFont.className}`}>
           support system for everything
         </h1>
-        <h1 className="text-center lg:text-6xl font-semibold leading-21 tracking-widest max-w-4xl mx-auto">
+        <h1 className={`text-center lg:text-6xl font-semibold leading-21 tracking-widest max-w-4xl mx-auto ${syneFont.className}`}>
           CamelWeb stands for.
         </h1>
       </div>
@@ -204,7 +209,7 @@ export default function Home() {
           <div className="h-px mx-auto bg-camel-500 mt-18 mb-3 "></div>
           
           {/* Heading */}
-          <h2 className="text-3xl font-medium text-camel-500 mb-11">Location photography</h2>
+          <h2 className={`text-3xl font-medium text-camel-500 mb-11 ${syneFont.className}`}>Location photography</h2>
           
           {/* Description */}
           <div className="mb-8 font-medium tracking-widest">
