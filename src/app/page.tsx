@@ -95,13 +95,12 @@ export default function Home() {
     <div className="max-w-[1366px] mx-auto">
       <Header />
       
-      
       {/* Location Photography Section */}
       <section id ="photography-section" className="bg-white w-[1245] mx-auto">
         
         <div className="px-4 py-16">
           {/* Full-width orange line */}
-          <div className="h-px w-[1245] mx-auto bg-camel-500 mt-4 mb-3"></div>
+          <div className="h-px mx-auto bg-camel-500 mt-4 mb-3"></div>
           
           {/* Heading */}
           <h2 className="text-3xl font-medium text-camel-500 mb-11">Location photography</h2>
@@ -136,7 +135,7 @@ export default function Home() {
                 <svg className="w-4 h-4 mr-2 mt-3 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
                   <path d="M2 4 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>      
-                <p className="text-gray-700 leading-relaxed mt-1 mb-2 whitespace-pre-line">
+                <p className="text-gray-700 leading-relaxed mt-1 whitespace-pre-line">
                 Approach different space perspectives, with close-ups of the people and wide frames of {"\n"} the office rooms.
                 </p>
               </div>
@@ -217,22 +216,60 @@ export default function Home() {
       </section>
 
       <footer id="about" className="bg-gray-50 border-t border-gray-200 ">
-        <div className="px-6 py-8 max-w-[1366] h-[244] mx-auto">
+        <div className="px-16 py-8 max-w-[1366] h-[244] mx-auto">
           {/* Main Footer Content */}
           <div className="flex items-center justify-between mb-6">
             {/* Logo/Brand */}
             <div className="flex items-center">
-              <div className="w-8 h-8 mr-3">
+              <div className="w-8 h-8 mr-3 mb-5">
                 {/* Camel Icon */}
-                <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full text-gray-800">
-                  <path d="M12 2C8.686 2 6 4.686 6 8c0 1.5.6 2.9 1.6 3.9L12 16.3l4.4-4.4c1-1 1.6-2.4 1.6-3.9 0-3.314-2.686-6-6-6zm0 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                  width="60.000000pt" height="50.000000pt" viewBox="0 0 120.000000 101.000000"
+                                  preserveAspectRatio="xMidYMid meet">
+                  <metadata>
+                    Created by potrace 1.10, written by Peter Selinger 2001-2011
+                  </metadata>
+                  <g transform="translate(0.000000,101.000000) scale(0.100000,-0.100000)"
+                    fill="#000000" stroke="none">
+                    <path d="M430 779 c0 -17 -27 -39 -49 -39 -12 0 -21 -5 -21 -11 0 -14 -26 -39
+                            -40 -39 -8 0 -10 -8 -7 -21 3 -12 0 -22 -9 -26 -8 -3 -14 -19 -14 -39 0 -19
+                            -4 -34 -10 -34 -5 0 -10 -9 -10 -20 0 -11 5 -20 10 -20 6 0 10 -11 10 -25 0
+                            -14 6 -25 13 -25 9 0 13 -12 13 -35 -1 -21 -6 -35 -13 -35 -9 0 -13 -17 -13
+                            -50 0 -27 5 -50 10 -50 6 0 10 -20 10 -45 0 -43 1 -45 30 -45 17 0 33 0 37 -1
+                            4 0 9 4 11 10 2 6 -3 11 -12 11 -10 0 -16 9 -16 25 0 14 -4 25 -10 25 -5 0
+                            -10 20 -10 45 0 25 5 45 10 45 6 0 10 11 10 25 0 16 6 25 16 25 13 0 15 -9 12
+                            -47 -2 -35 1 -47 10 -45 7 1 12 -8 12 -23 0 -14 5 -25 10 -25 6 0 10 -11 10
+                            -25 0 -16 6 -25 15 -25 8 0 15 -6 15 -14 0 -17 42 -16 48 2 2 6 -3 12 -12 12
+                            -11 0 -16 9 -16 31 0 30 -19 59 -39 59 -7 0 -11 24 -11 60 0 33 -4 60 -10 60
+                            -5 0 -10 7 -10 15 0 9 9 15 25 15 16 0 25 -6 25 -16 0 -8 5 -12 10 -9 6 3 10
+                            -1 10 -9 0 -13 15 -16 85 -16 63 0 84 3 82 13 -1 7 8 12 22 12 13 0 26 -6 29
+                            -12 2 -7 -3 -13 -12 -13 -13 0 -16 -12 -16 -60 0 -41 -4 -60 -12 -60 -9 0 -13
+                            -15 -12 -47 1 -40 5 -48 20 -48 17 0 20 10 24 84 3 55 9 86 18 89 9 3 12 -18
+                            12 -82 0 -78 2 -86 19 -86 11 0 26 -3 35 -6 11 -4 16 -1 16 10 0 9 -7 16 -15
+                            16 -12 0 -15 17 -15 95 0 61 4 95 11 95 17 0 39 27 39 49 0 12 6 21 15 21 8 0
+                            15 -4 15 -10 0 -5 16 -10 36 -10 31 0 35 3 32 23 -2 13 2 21 10 19 6 -1 12 5
+                            12 13 0 8 6 15 13 15 9 0 11 19 9 70 -4 69 -3 70 22 70 16 0 26 6 26 15 0 8 5
+                            14 11 13 6 -2 14 3 16 10 3 6 -2 12 -11 12 -9 0 -16 5 -16 10 0 6 -20 10 -45
+                            10 -25 0 -45 -4 -45 -10 0 -5 -7 -10 -15 -10 -8 0 -15 5 -15 10 0 6 -4 10 -10
+                            10 -5 0 -10 -11 -10 -25 0 -14 -5 -24 -12 -23 -7 2 -14 -7 -16 -19 -2 -16 2
+                            -23 12 -23 21 0 20 -35 -1 -60 -19 -22 -33 -26 -33 -9 0 17 -27 39 -49 39 -12
+                            0 -21 6 -21 15 0 8 -6 15 -14 15 -9 0 -12 7 -9 20 4 14 0 20 -11 20 -9 0 -16
+                            5 -16 11 0 20 -29 39 -59 39 -17 0 -31 -4 -31 -10 0 -5 -6 -10 -14 -10 -11 0
+                            -13 -10 -9 -40 5 -33 3 -40 -11 -40 -9 0 -16 7 -16 15 0 8 -4 15 -10 15 -5 0
+                            -10 11 -10 25 0 20 -5 25 -25 25 -20 0 -25 5 -25 25 0 20 -5 25 -25 25 -14 0
+                            -25 -5 -25 -11z m72 -98 c37 -46 62 -54 85 -28 11 12 23 30 26 40 10 29 42 19
+                            68 -20 21 -33 120 -111 143 -112 4 -1 24 15 43 34 30 30 34 39 28 66 -5 22 -3
+                            34 6 40 24 15 29 10 19 -17 -6 -14 -10 -43 -10 -65 0 -59 -24 -89 -71 -89 -34
+                            0 -42 -5 -65 -40 -31 -46 -39 -48 -71 -18 -20 19 -27 20 -62 10 -59 -18 -122
+                            -15 -156 8 -38 25 -60 25 -92 0 -35 -27 -40 -26 -62 18 -18 36 -19 42 -5 82
+                            23 65 31 78 76 110 45 33 60 30 100 -19z"/>
+                  </g>
                 </svg>
               </div>
-              <span className="text-lg font-bold text-gray-800">CamelWeb</span>
             </div>
             
             {/* Social Media Icons */}
-            <div id="contact" className="flex space-x-4">
+            <div id="contact" className="flex space-x-4 mt-5">
               {/* Twitter Icon */}
               <a href="#" className="text-gray-600 hover:text-gray-800 transition-colors">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
