@@ -26,12 +26,12 @@ const Header = () => {
         
           {/* Mobile menu dropdown*/}
           {isMenuOpen && (
-            <div className="absolute right-0 mt-3 bg-camel-500 border border-white/20 shadow-lg rounded-md">
+            <div className="absolute -right-14 mt-3 bg-camel-500 border border-white/20 shadow-lg rounded-md">
               <nav className="py-2">
-                <a href="#" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Photography</a>
-                <a href="#" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Applications</a>
-                <a href="#" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">About</a>
-                <a href="#" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Contact</a>
+                <a href="#photo-grid" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Photography</a>
+                <a href="#applications" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Applications</a>
+                <a href="#about" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">About</a>
+                <a href="#contact" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Contact</a>
               </nav>
             </div>
           )}
@@ -146,7 +146,7 @@ export default function Home() {
       </section>
 
       {/* Photo Grid Section */}
-      <section className="bg-white mx-auto">
+      <section id="photo-grid" className="bg-white mx-auto">
         <div className="px-6 pb-16 w-[1246] mx-auto">
           {/* Photo Grid */}
           <div className="grid grid-cols-2 gap-8 max-w-7xl mx-auto">
@@ -199,7 +199,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white max-w-[1247] h-[127] mx-auto mb-10">
+      <section id="applications" className="bg-white max-w-[1247] h-[127] mx-auto mb-10">
         <div className="px-6 py-10">
           {/* Next label */}
           <p className="text-medium mb-2">Next</p>
@@ -216,7 +216,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="bg-gray-50 border-t border-gray-200 ">
+      <footer id="about" className="bg-gray-50 border-t border-gray-200 ">
         <div className="px-6 py-8 max-w-[1366] h-[244] mx-auto">
           {/* Main Footer Content */}
           <div className="flex items-center justify-between mb-6">
@@ -232,7 +232,7 @@ export default function Home() {
             </div>
             
             {/* Social Media Icons */}
-            <div className="flex space-x-4">
+            <div id="contact" className="flex space-x-4">
               {/* Twitter Icon */}
               <a href="#" className="text-gray-600 hover:text-gray-800 transition-colors">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
