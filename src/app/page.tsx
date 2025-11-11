@@ -12,7 +12,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header className="bg-camel-500 text-white relative h-[768]">
-      <div className="flex items-center justify-between px-15 py-1">
+      <div className="flex items-center justify-between px-15 py-2">
         {/* Logo */}
         <div className={`text-3xl font-bold tracking-wide ${syneFont.className}`}>
           CAMELWEB
@@ -49,25 +49,25 @@ const Header = () => {
         <div className="w-[1250] mx-auto h-px bg-white"></div>
       </div>
         
-      <div className="px-6 py-33">
+      <div className="px-7 py-33">
         {/* Photography label */}
-        <p className={`text-center text-3xl mb-9 font-medium tracking-wide ${syneFont.className} font-weight:600`}>
+        <h4 className={`text-center text-3xl font-semibold tracking-wider ${syneFont.className}`}>
           Photography
-        </p>
+        </h4>
         {/* Main headline */}
-        <h1 className={`text-center lg:text-6xl font-semibold leading-21 tracking-widest max-w-4xl mx-auto ${syneFont.className}`}>
+        <h2 className={`text-center text-[67px] mt-11 font-semibold leading-20 tracking-wide mx-auto ${syneFont.className}`}>
           The photographs act as a
-        </h1>
-        <h1 className={`text-center lg:text-6xl font-semibold leading-21 tracking-wide max-w-4xl mx-auto ${syneFont.className}`}>
+        </h2>
+        <h2 className={`text-center text-[67px] font-semibold leading-19 tracking-wide mx-auto ${syneFont.className}`}>
           support system for everything
-        </h1>
-        <h1 className={`text-center lg:text-6xl font-semibold leading-21 tracking-widest max-w-4xl mx-auto ${syneFont.className}`}>
+        </h2>
+        <h2 className={`text-center text-[67px] font-semibold leading-19 tracking-wide mx-auto ${syneFont.className}`}>
           CamelWeb stands for.
-        </h1>
+        </h2>
       </div>
       
       {/* Down arrow */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 py-14">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 py-14">
         <button 
           onClick={() => {
             document.getElementById('photography-section')?.scrollIntoView({behavior: 'smooth'})
@@ -79,7 +79,7 @@ const Header = () => {
       </div>
       
       {/* Left and Right arrows */}
-      <div className="absolute bottom-14 right-15 flex space-x-5 py-5">
+      <div className="absolute bottom-13 right-14 flex space-x-5 py-4">
         <button className="w-8 h-8 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
