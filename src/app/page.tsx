@@ -204,7 +204,7 @@ export default function Home() {
       {/* Location Photography Section */}
       <section id ="photography-section" className="bg-white w-[1245] mx-auto">
         
-        <div className="">
+        <div className="mb-20">
           {/* Full-width orange line */}
           <div className="h-px mx-auto bg-camel-500 mt-18 mb-3 "></div>
           
@@ -254,36 +254,36 @@ export default function Home() {
       <section id="photo-grid" className="bg-white mx-auto">
         <div className="w-[1246] mx-auto">
           {/* Photo Grid */}
-          <div className="grid grid-cols-2 gap-4 max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 gap-6 max-w-7xl mx-auto">
             {/* Top row */}
-            <div className="aspect-[4/3] w-[609] h-[411]">
+            <div className="aspect-[4/3] w-[608] h-[405]">
               <img 
                 src="/images/1.jpg" 
                 alt="CamelWeb employees in library area" 
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full"
               />
             </div>
-            <div className="aspect-[4/3] w-[609] h-[411]">
+            <div className="aspect-[4/3] w-[608] h-[405]">
               <img 
                 src="/images/2.jpg" 
                 alt="CamelWeb team meeting" 
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full"
               />
             </div>
             
             {/* Middle row */}
-            <div className="aspect-[4/3] w-[609] h-[411]">
+            <div className="aspect-[4/3] w-[608] h-[405]">
               <img 
                 src="/images/3.jpg" 
                 alt="CamelWeb office space with plants" 
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full"
               />
             </div>
-            <div className="aspect-[4/3] w-[609] h-[411]">
+            <div className="aspect-[4/3] w-[608] h-[405]">
               <img 
                 src="/images/4.jpg" 
                 alt="CamelWeb conference room" 
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full"
               />
             </div>
             
@@ -292,7 +292,7 @@ export default function Home() {
               <img 
                 src="/images/5.jpg" 
                 alt="CamelWeb office with city view" 
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full"
               />
             </div>
           </div>
