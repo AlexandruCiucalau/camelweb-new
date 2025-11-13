@@ -2,10 +2,16 @@
 
 import React, { useState } from 'react';
 import { Syne } from 'next/font/google';
+import { Poppins } from 'next/font/google';
+
+const poppinsFont = Poppins({
+  subsets: ["latin"],
+  weight: ['400', '500', '600', '700'],
+});
 
 const syneFont = Syne({
   subsets: ["latin"],
-  weight:"500",
+  weight: ['400', '500', '600', '700'],
 });
 
 const Header = () => {
@@ -202,36 +208,36 @@ export default function Home() {
       <Header />
       
       {/* Location Photography Section */}
-      <section id ="photography-section" className="bg-white w-[1245] mx-auto">
+      <section id ="photography-section" className="bg-white w-[1366] mx-auto">
         
-        <div className="mb-20">
+        <div className="mb-20 mx-16">
           {/* Full-width orange line */}
-          <div className="h-px mx-auto bg-camel-500 mt-18 mb-3 "></div>
+          <div className="h-[1.5] mx-auto bg-camel-500 mt-18 mb-3 "></div>
           
           {/* Heading */}
-          <h2 className={`text-3xl font-medium text-camel-500 mb-11 ${syneFont.className}`}>Location photography</h2>
+          <h4 className={`text-3xl font-semibold text-camel-500 mb-14 ${syneFont.className}`}>Location photography</h4>
           
           {/* Description */}
-          <div className="mb-8 font-medium tracking-widest">
-            <p className="text-gray-700 leading-relaxed -mb-1">
+          <div className={`mb-8 text-xl tracking-tight font-medium ${poppinsFont.className}`}>
+            <p className={`text-gray-700 leading-tight -mb-2`}>
               The location photography aims to show the CamelWeb offices and employees in order to
             </p>
-            <p className="text-gray-700 leading-relaxed mb-2">
+            <p className={`text-gray-700 leading-relaxed mb-3`}>
               communicate the brand's values.
             </p>
-            <p className="text-gray-700 leading-relaxed mb-5">
+            <p className={`text-gray-700 leading-normal mb-6`}>
               Thus, all images in this category must meet the following criteria:
             </p>
             
             {/* Criteria list */}
-            <div className="space-y-5 text-gray-700 -ml-1">
+            <div className={`space-y-2 text-gray-700 -ml-1`}>
               <div className="flex items-start">
                 <svg className="w-4 h-4 mr-2 mt-1 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
                   <path d="M2 4 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>  
                 <p>Warm, earthy tones and natural light.</p>
               </div>
-              <div className="flex items-start">
+              <div className="flex items-start pt-3 pb-4">
                 <svg className="w-4 h-4 mr-2 mt-1 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
                   <path d="M2 4 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>  
@@ -241,7 +247,7 @@ export default function Home() {
                 <svg className="w-4 h-4 mr-2 mt-3 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
                   <path d="M2 4 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>      
-                <p className="text-gray-700 leading-relaxed mt-1 whitespace-pre-line">
+                <p className="text-gray-700 leading-[1.1] whitespace-pre-line">
                 Approach different space perspectives, with close-ups of the people and wide frames of {"\n"} the office rooms.
                 </p>
               </div>
@@ -314,7 +320,7 @@ export default function Home() {
             <h2 className="text-4xl font-medium text-black">Applications</h2>
             <button className="text-black hover:text-gray-600 transition-colors">
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
           </div>
