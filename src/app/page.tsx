@@ -202,67 +202,67 @@ const Footer = ()=>{
   );
 
 };
-export default function Home() {
+
+const LocationPhotography = () => {
   return (
-    <div className="max-w-[1366px] mx-auto">
-      <Header />
-      
-      {/* Location Photography Section */}
-      <section id ="photography-section" className="bg-white w-[1366] mx-auto">
-        
-        <div className="mb-20 mx-16">
-          {/* Full-width orange line */}
-          <div className="h-[1.5] mx-auto bg-camel-500 mt-18 mb-3 "></div>
-          
-          {/* Heading */}
-          <h4 className={`text-3xl font-semibold text-camel-500 mb-14 ${syneFont.className}`}>Location photography</h4>
-          
-          {/* Description */}
-          <div className={`mb-8 text-xl tracking-tight font-medium ${poppinsFont.className}`}>
-            <p className={`text-gray-700 leading-tight -mb-2`}>
-              The location photography aims to show the CamelWeb offices and employees in order to
-            </p>
-            <p className={`text-gray-700 leading-relaxed mb-3`}>
-              communicate the brand's values.
-            </p>
-            <p className={`text-gray-700 leading-normal mb-6`}>
-              Thus, all images in this category must meet the following criteria:
-            </p>
-            
-            {/* Criteria list */}
-            <div className={`space-y-2 text-gray-700 -ml-1`}>
-              <div className="flex items-start">
-                <svg className="w-4 h-4 mr-2 mt-1 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
-                  <path d="M2 4 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>  
-                <p>Warm, earthy tones and natural light.</p>
-              </div>
-              <div className="flex items-start pt-3 pb-4">
-                <svg className="w-4 h-4 mr-2 mt-1 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
-                  <path d="M2 4 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>  
-                <p>CamelWeb employees while they enjoy themselves and their work.</p>
-              </div>
-              <div className="flex items-start">
-                <svg className="w-4 h-4 mr-2 mt-3 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
-                  <path d="M2 4 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>      
-                <p className="text-gray-700 leading-[1.1] whitespace-pre-line">
+    < section id = "photography-section" className = "bg-white w-[1366] mx-auto" >
+
+      <div className="mb-20 mx-16">
+        {/* Full-width orange line */}
+        <div className="h-[1.5] mx-auto bg-camel-500 mt-18 mb-3 "></div>
+
+        {/* Heading */}
+        <h4 className={`text-3xl font-semibold text-camel-500 mb-14 ${syneFont.className}`}>Location photography</h4>
+
+        {/* Description */}
+        <div className={`mb-8 text-xl tracking-tight font-medium ${poppinsFont.className}`}>
+          <p className={`text-gray-700 leading-tight -mb-2`}>
+            The location photography aims to show the CamelWeb offices and employees in order to
+          </p>
+          <p className={`text-gray-700 leading-relaxed mb-3`}>
+            communicate the brand's values.
+          </p>
+          <p className={`text-gray-700 leading-normal mb-6`}>
+            Thus, all images in this category must meet the following criteria:
+          </p>
+
+          {/* Criteria list */}
+          <div className={`space-y-2 text-gray-700 -ml-1`}>
+            <div className="flex items-start">
+              <svg className="w-4 h-4 mr-2 mt-1 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <path d="M2 4 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <p>Warm, earthy tones and natural light.</p>
+            </div>
+            <div className="flex items-start pt-3 pb-5">
+              <svg className="w-4 h-4 mr-2 mt-1 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <path d="M2 4 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <p>CamelWeb employees while they enjoy themselves and their work.</p>
+            </div>
+            <div className="flex items-start">
+              <svg className="w-4 h-4 mr-2 mt-3 flex-shrink-0" viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                <path d="M2 4 L2 14 L14 14 L10 10 M14 14 L10 16" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <p className="text-gray-700 leading-[1.1] whitespace-pre-line">
                 Approach different space perspectives, with close-ups of the people and wide frames of {"\n"} the office rooms.
-                </p>
-              </div>
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      </section >
+  );
+};
 
-      {/* Photo Grid Section */}
-      <section id="photo-grid" className="bg-white mx-auto">
+const PhotoGrid = () => {
+  return (
+    <section id="photo-grid" className="bg-white mx-auto">
         <div className="w-[1246] mx-auto">
           {/* Photo Grid */}
-          <div className="grid grid-cols-2 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 gap-[28] max-w-7xl mx-auto">
             {/* Top row */}
-            <div className="aspect-[4/3] w-[608] h-[405]">
+            <div className="aspect-[4/3] w-[607] h-[405]">
               <img 
                 src="/images/1.jpg" 
                 alt="CamelWeb employees in library area" 
@@ -278,14 +278,14 @@ export default function Home() {
             </div>
             
             {/* Middle row */}
-            <div className="aspect-[4/3] w-[608] h-[405]">
+            <div className="aspect-[4/3] w-[609] h-[411]">
               <img 
                 src="/images/3.jpg" 
                 alt="CamelWeb office space with plants" 
                 className="w-full h-full"
               />
             </div>
-            <div className="aspect-[4/3] w-[608] h-[405]">
+            <div className="aspect-[4/3] w-[609] h-[411]">
               <img 
                 src="/images/4.jpg" 
                 alt="CamelWeb conference room" 
@@ -304,6 +304,15 @@ export default function Home() {
           </div>
         </div>
       </section>
+  );
+}
+export default function Home() {
+  return (
+    <div className="max-w-[1366px] mx-auto">
+      <Header />
+      <LocationPhotography />
+      <PhotoGrid />
+
       <section className="bg-white w-[1247] mx-auto">
         <div className="py-10">
           <div className="h-px bg-black"></div>
