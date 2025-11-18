@@ -18,9 +18,9 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header className="bg-camel-500 text-white relative h-[768]">
-      <div className="flex items-center justify-between px-15 py-2">
+      <div className="flex items-center justify-between px-15 py-6">
         {/* Logo */}
-        <div className={`text-3xl font-bold tracking-wide ${syneFont.className}`}>
+        <div className={`text-2xl font-bold tracking-wide ${syneFont.className}`}>
           CAMELWEB
         </div>
       
@@ -51,29 +51,29 @@ const Header = () => {
       </div>
       
       {/* Full-width horizontal line*/}
-      <div className="px-6 py-4">
+      <div className="px-6">
         <div className="w-[1250] mx-auto h-px bg-white"></div>
       </div>
         
-      <div className="px-7 py-33">
+      <div className="px-7 py-37">
         {/* Photography label */}
-        <h4 className={`text-center text-3xl font-semibold tracking-wider ${syneFont.className}`}>
+        <h4 className={`text-center text-3xl font-semibold tracking-wide ${syneFont.className}`}>
           Photography
         </h4>
         {/* Main headline */}
-        <h2 className={`text-center text-[67px] mt-11 font-semibold leading-20 tracking-wide mx-auto ${syneFont.className}`}>
+        <h2 className={`text-center text-[67px] mt-11 font-semibold leading-20 mx-auto ${syneFont.className}`}>
           The photographs act as a
         </h2>
-        <h2 className={`text-center text-[67px] font-semibold leading-19 tracking-wide mx-auto ${syneFont.className}`}>
+        <h2 className={`text-center text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
           support system for everything
         </h2>
-        <h2 className={`text-center text-[67px] font-semibold leading-19 tracking-wide mx-auto ${syneFont.className}`}>
+        <h2 className={`text-center text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
           CamelWeb stands for.
         </h2>
       </div>
       
       {/* Down arrow */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 py-14">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 py-11">
         <button 
           onClick={() => {
             document.getElementById('photography-section')?.scrollIntoView({behavior: 'smooth'})
@@ -85,7 +85,7 @@ const Header = () => {
       </div>
       
       {/* Left and Right arrows */}
-      <div className="absolute bottom-13 right-14 flex space-x-5 py-4">
+      <div className="absolute bottom-13 right-14 flex space-x-5 py-1">
         <button className="w-8 h-8 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
@@ -258,34 +258,34 @@ const LocationPhotography = () => {
 const PhotoGrid = () => {
   return (
     <section id="photo-grid" className="bg-white mx-auto">
-        <div className="w-[1246] mx-auto">
+        <div className="w-[1246px] mx-auto">
           {/* Photo Grid */}
-          <div className="grid grid-cols-2 gap-[28] max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 gap-[28] mx-auto">
             {/* Top row */}
-            <div className="aspect-[4/3] w-[607] h-[405]">
+            <div className="w-photo-w h-photo-h">
               <img 
                 src="/images/1.jpg" 
                 alt="CamelWeb employees in library area" 
                 className="w-full h-full"
               />
             </div>
-            <div className="aspect-[4/3] w-[608] h-[405]">
+            <div className="w-photo-w h-photo-h">
               <img 
                 src="/images/2.jpg" 
                 alt="CamelWeb team meeting" 
-                className="w-full h-full"
+                className="w-full h-full object-cover"
               />
             </div>
             
             {/* Middle row */}
-            <div className="aspect-[4/3] w-[609] h-[411]">
+            <div className="w-photo-w h-photo-h">
               <img 
                 src="/images/3.jpg" 
                 alt="CamelWeb office space with plants" 
                 className="w-full h-full"
               />
             </div>
-            <div className="aspect-[4/3] w-[609] h-[411]">
+            <div className="w-photo-w h-photo-h">
               <img 
                 src="/images/4.jpg" 
                 alt="CamelWeb conference room" 
@@ -294,7 +294,7 @@ const PhotoGrid = () => {
             </div>
             
             {/* Bottom row  */}
-            <div className="col-span-2 aspect-[8/5] w-[1246] h-[702]">
+            <div className="h-photo-bottom-h w-[1246]">
               <img 
                 src="/images/5.jpg" 
                 alt="CamelWeb office with city view" 
