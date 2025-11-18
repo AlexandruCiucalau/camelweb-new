@@ -306,35 +306,38 @@ const PhotoGrid = () => {
       </section>
   );
 }
+
+const Applications = () => {
+  return (
+    <section id="applications" className="bg-white w-[1247px] h-[127px] mx-auto mb-20">
+      <div className="py-10 bg-white mx-auto">
+        <div className="h-px bg-black"></div>
+      </div>
+      <div>
+        {/* Next label */}
+        <p className="text-medium mb-2">Next</p>
+
+        {/* Applications heading with arrow */}
+        <div className="flex items-center justify-between">
+          <h2 className="text-4xl font-medium text-black">Applications</h2>
+          <button className="text-black hover:text-gray-600 transition-colors">
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <div className="max-w-[1366px] mx-auto">
       <Header />
       <LocationPhotography />
       <PhotoGrid />
-
-      <section className="bg-white w-[1247px] mx-auto">
-        <div className="py-10">
-          <div className="h-px bg-black"></div>
-        </div>
-      </section>
-
-      <section id="applications" className="bg-white max-w-[1247px] h-[127px] mx-auto mb-10">
-        <div className="px-6 py-10">
-          {/* Next label */}
-          <p className="text-medium mb-2">Next</p>
-          
-          {/* Applications heading with arrow */}
-          <div className="flex items-center justify-between">
-            <h2 className="text-4xl font-medium text-black">Applications</h2>
-            <button className="text-black hover:text-gray-600 transition-colors">
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
+      <Applications />
       <Footer />
     </div>
   );
