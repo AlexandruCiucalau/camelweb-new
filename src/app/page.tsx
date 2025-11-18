@@ -17,7 +17,7 @@ const syneFont = Syne({
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className="bg-camel-500 text-white relative h-[768]">
+    <header className="bg-camel-500 text-white relative h-[768px] w-[1366px] mx-auto">
       <div className="flex items-center justify-between px-15 py-6">
         {/* Logo */}
         <div className={`text-2xl font-bold tracking-wide ${syneFont.className}`}>
@@ -51,8 +51,8 @@ const Header = () => {
       </div>
       
       {/* Full-width horizontal line*/}
-      <div className="px-6">
-        <div className="w-[1250] mx-auto h-px bg-white"></div>
+      <div className="w-[1246px] mx-auto">
+        <div className=" h-px bg-white"></div>
       </div>
         
       <div className="px-7 py-37">
@@ -85,7 +85,7 @@ const Header = () => {
       </div>
       
       {/* Left and Right arrows */}
-      <div className="absolute bottom-13 right-14 flex space-x-5 py-1">
+      <div className="absolute bottom-13 right-14 flex space-x-5 py-">
         <button className="w-8 h-8 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
@@ -104,7 +104,7 @@ const Header = () => {
 const Footer = ()=>{
   return (
     <footer id="about" className="bg-gray-50 border-t border-gray-200 ">
-      <div className="px-16 py-8 max-w-[1366] h-[244] mx-auto">
+      <div className="px-16 py-8 max-w-[1366px] h-[244px] mx-auto">
         {/* Main Footer Content */}
         <div className="flex items-center justify-between mb-6">
           {/* Logo/Brand */}
@@ -205,9 +205,9 @@ const Footer = ()=>{
 
 const LocationPhotography = () => {
   return (
-    < section id = "photography-section" className = "bg-white w-[1366] mx-auto" >
+    < section id = "photography-section" className = "bg-white w-[1245px] mb-20 h-[379px] mx-auto" >
 
-      <div className="mb-20 mx-16">
+      <div className="">
         {/* Full-width orange line */}
         <div className="h-[1.5] mx-auto bg-camel-500 mt-18 mb-3 "></div>
 
@@ -260,7 +260,7 @@ const PhotoGrid = () => {
     <section id="photo-grid" className="bg-white mx-auto">
         <div className="w-[1246px] mx-auto">
           {/* Photo Grid */}
-          <div className="grid grid-cols-2 gap-[28] mx-auto">
+          <div className="grid grid-cols-2 gap-[28px] mx-auto">
             {/* Top row */}
             <div className="w-photo-w h-photo-h">
               <img 
@@ -294,7 +294,7 @@ const PhotoGrid = () => {
             </div>
             
             {/* Bottom row  */}
-            <div className="h-photo-bottom-h w-[1246]">
+            <div className="h-photo-bottom-h w-[1246px]">
               <img 
                 src="/images/5.jpg" 
                 alt="CamelWeb office with city view" 
@@ -313,13 +313,13 @@ export default function Home() {
       <LocationPhotography />
       <PhotoGrid />
 
-      <section className="bg-white w-[1247] mx-auto">
+      <section className="bg-white w-[1247px] mx-auto">
         <div className="py-10">
           <div className="h-px bg-black"></div>
         </div>
       </section>
 
-      <section id="applications" className="bg-white max-w-[1247] h-[127] mx-auto mb-10">
+      <section id="applications" className="bg-white max-w-[1247px] h-[127px] mx-auto mb-10">
         <div className="px-6 py-10">
           {/* Next label */}
           <p className="text-medium mb-2">Next</p>
