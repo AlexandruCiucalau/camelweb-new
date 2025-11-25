@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Syne } from 'next/font/google';
+import { Open_Sans, Syne } from 'next/font/google';
 import { Poppins } from 'next/font/google';
 
 const poppinsFont = Poppins({
@@ -14,6 +14,10 @@ const syneFont = Syne({
   weight: ['400', '500', '600', '700'],
 });
 
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ['400', '500', '600', '700'],
+})
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
@@ -23,7 +27,7 @@ const Header = () => {
         <div className={`text-2xl font-bold tracking-wide ${syneFont.className}`}>
           CAMELWEB
         </div>
-      
+
         {/* Hamburger Menu*/}
         <div className="relative">
           <button
@@ -35,7 +39,7 @@ const Header = () => {
             <div className="w-10 h-0.5 bg-white"></div>
             <div className="w-5 h-0.5 bg-white"></div>
           </button>
-        
+
           {/* Mobile menu dropdown*/}
           {isMenuOpen && (
             <div className="absolute -right-14 mt-3 bg-camel-500 border border-white/20 shadow-lg rounded-md">
@@ -49,12 +53,12 @@ const Header = () => {
           )}
         </div>
       </div>
-      
+
       {/* Full-width horizontal line*/}
       <div className="w-[1246px] mx-auto">
         <div className=" h-px bg-white"></div>
       </div>
-        
+
       <div className="px-7 py-37">
         {/* Photography label */}
         <h4 className={`text-center text-3xl font-semibold tracking-wide ${syneFont.className}`}>
@@ -71,19 +75,19 @@ const Header = () => {
           CamelWeb stands for.
         </h2>
       </div>
-      
+
       {/* Down arrow */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 py-11">
-        <button 
+        <button
           onClick={() => {
-            document.getElementById('photography-section')?.scrollIntoView({behavior: 'smooth'})
+            document.getElementById('photography-section')?.scrollIntoView({ behavior: 'smooth' })
           }} className="text-white opacity-70 hover:opacity-100 transition-opacity">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </button>
       </div>
-      
+
       {/* Left and Right arrows */}
       <div className="absolute bottom-13 right-14 flex space-x-5 py-">
         <button className="w-8 h-8 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
@@ -101,66 +105,32 @@ const Header = () => {
   );
 };
 
-const Footer = ()=>{
+const Footer = () => {
   return (
-    <footer id="about" className="bg-gray-50 border-t border-gray-200 ">
-      <div className="px-16 py-8 max-w-[1366px] h-[244px] mx-auto">
+    <footer id="about" className="bg-gray-50 border-t border-gray-200">
+      <div className={`px-16 py-8 max-w-[1366px] h-[244px] mx-auto  tracking-tight ${openSans.className}`}>
         {/* Main Footer Content */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between ">
           {/* Logo/Brand */}
-          <div className="flex items-center">
-            <div className="w-8 h-8 mr-3 mb-5">
-              {/* Camel Icon */}
-              <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                width="60.000000pt" height="50.000000pt" viewBox="0 0 120.000000 101.000000"
-                preserveAspectRatio="xMidYMid meet">
-                <metadata>
-                  Created by potrace 1.10, written by Peter Selinger 2001-2011
-                </metadata>
-                <g transform="translate(0.000000,101.000000) scale(0.100000,-0.100000)"
-                  fill="#000000" stroke="none">
-                  <path d="M430 779 c0 -17 -27 -39 -49 -39 -12 0 -21 -5 -21 -11 0 -14 -26 -39
-                            -40 -39 -8 0 -10 -8 -7 -21 3 -12 0 -22 -9 -26 -8 -3 -14 -19 -14 -39 0 -19
-                            -4 -34 -10 -34 -5 0 -10 -9 -10 -20 0 -11 5 -20 10 -20 6 0 10 -11 10 -25 0
-                            -14 6 -25 13 -25 9 0 13 -12 13 -35 -1 -21 -6 -35 -13 -35 -9 0 -13 -17 -13
-                            -50 0 -27 5 -50 10 -50 6 0 10 -20 10 -45 0 -43 1 -45 30 -45 17 0 33 0 37 -1
-                            4 0 9 4 11 10 2 6 -3 11 -12 11 -10 0 -16 9 -16 25 0 14 -4 25 -10 25 -5 0
-                            -10 20 -10 45 0 25 5 45 10 45 6 0 10 11 10 25 0 16 6 25 16 25 13 0 15 -9 12
-                            -47 -2 -35 1 -47 10 -45 7 1 12 -8 12 -23 0 -14 5 -25 10 -25 6 0 10 -11 10
-                            -25 0 -16 6 -25 15 -25 8 0 15 -6 15 -14 0 -17 42 -16 48 2 2 6 -3 12 -12 12
-                            -11 0 -16 9 -16 31 0 30 -19 59 -39 59 -7 0 -11 24 -11 60 0 33 -4 60 -10 60
-                            -5 0 -10 7 -10 15 0 9 9 15 25 15 16 0 25 -6 25 -16 0 -8 5 -12 10 -9 6 3 10
-                            -1 10 -9 0 -13 15 -16 85 -16 63 0 84 3 82 13 -1 7 8 12 22 12 13 0 26 -6 29
-                            -12 2 -7 -3 -13 -12 -13 -13 0 -16 -12 -16 -60 0 -41 -4 -60 -12 -60 -9 0 -13
-                            -15 -12 -47 1 -40 5 -48 20 -48 17 0 20 10 24 84 3 55 9 86 18 89 9 3 12 -18
-                            12 -82 0 -78 2 -86 19 -86 11 0 26 -3 35 -6 11 -4 16 -1 16 10 0 9 -7 16 -15
-                            16 -12 0 -15 17 -15 95 0 61 4 95 11 95 17 0 39 27 39 49 0 12 6 21 15 21 8 0
-                            15 -4 15 -10 0 -5 16 -10 36 -10 31 0 35 3 32 23 -2 13 2 21 10 19 6 -1 12 5
-                            12 13 0 8 6 15 13 15 9 0 11 19 9 70 -4 69 -3 70 22 70 16 0 26 6 26 15 0 8 5
-                            14 11 13 6 -2 14 3 16 10 3 6 -2 12 -11 12 -9 0 -16 5 -16 10 0 6 -20 10 -45
-                            10 -25 0 -45 -4 -45 -10 0 -5 -7 -10 -15 -10 -8 0 -15 5 -15 10 0 6 -4 10 -10
-                            10 -5 0 -10 -11 -10 -25 0 -14 -5 -24 -12 -23 -7 2 -14 -7 -16 -19 -2 -16 2
-                            -23 12 -23 21 0 20 -35 -1 -60 -19 -22 -33 -26 -33 -9 0 17 -27 39 -49 39 -12
-                            0 -21 6 -21 15 0 8 -6 15 -14 15 -9 0 -12 7 -9 20 4 14 0 20 -11 20 -9 0 -16
-                            5 -16 11 0 20 -29 39 -59 39 -17 0 -31 -4 -31 -10 0 -5 -6 -10 -14 -10 -11 0
-                            -13 -10 -9 -40 5 -33 3 -40 -11 -40 -9 0 -16 7 -16 15 0 8 -4 15 -10 15 -5 0
-                            -10 11 -10 25 0 20 -5 25 -25 25 -20 0 -25 5 -25 25 0 20 -5 25 -25 25 -14 0
-                            -25 -5 -25 -11z m72 -98 c37 -46 62 -54 85 -28 11 12 23 30 26 40 10 29 42 19
-                            68 -20 21 -33 120 -111 143 -112 4 -1 24 15 43 34 30 30 34 39 28 66 -5 22 -3
-                            34 6 40 24 15 29 10 19 -17 -6 -14 -10 -43 -10 -65 0 -59 -24 -89 -71 -89 -34
-                            0 -42 -5 -65 -40 -31 -46 -39 -48 -71 -18 -20 19 -27 20 -62 10 -59 -18 -122
-                            -15 -156 8 -38 25 -60 25 -92 0 -35 -27 -40 -26 -62 18 -18 36 -19 42 -5 82
-                            23 65 31 78 76 110 45 33 60 30 100 -19z"/>
-                </g>
-              </svg>
-            </div>
+          <div className="w-8 h-8 mr-8 mb-6">
+            {/* Camel Icon */}
+
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+              width="115.000000pt" height="95.000000pt" viewBox="0 0 200.000000 121.000000"
+              preserveAspectRatio="xMidYMid meet" className="-mx-11 -mt-11 fill-current" >
+              <g style={{ backgroundColor: 'gray' }}>
+                <path d="M 61.00 128.62 C61.00,129.63 59.52,130.00 55.50,130.00 L 50.00 130.00 L 50.00 123.00 C50.00,116.67 49.81,116.00 48.00,116.00 C46.19,116.00 46.00,115.33 46.00,109.12 C46.00,103.07 46.24,102.17 48.00,101.71 C49.67,101.27 50.00,100.35 50.00,96.09 C50.00,91.67 49.74,91.00 48.00,91.00 C46.38,91.00 46.00,90.33 46.00,87.50 C46.00,85.06 45.55,84.00 44.50,84.00 C43.45,84.00 43.00,82.94 43.00,80.50 C43.00,78.06 43.45,77.00 44.50,77.00 C45.65,77.00 46.00,75.72 46.00,71.50 C46.00,66.67 46.24,66.00 48.00,66.00 C49.62,66.00 50.00,65.33 50.00,62.50 C50.00,60.06 50.45,59.00 51.50,59.00 C52.33,59.00 53.00,58.33 53.00,57.50 C53.00,56.67 53.72,56.00 54.59,56.00 C55.47,56.00 56.42,55.10 56.71,54.00 C57.10,52.50 58.07,52.00 60.62,52.00 C63.33,52.00 64.00,51.61 64.00,50.00 C64.00,48.67 64.67,48.00 66.00,48.00 C67.11,48.00 68.00,47.33 68.00,46.50 C68.00,45.45 69.06,45.00 71.50,45.00 C74.83,45.00 75.00,45.17 75.00,48.50 C75.00,51.83 75.17,52.00 78.50,52.00 C81.83,52.00 82.00,52.17 82.00,55.50 C82.00,58.33 82.38,59.00 84.00,59.00 C85.33,59.00 86.00,59.67 86.00,61.00 C86.00,62.11 86.67,63.00 87.50,63.00 C88.65,63.00 89.00,61.72 89.00,57.50 C89.00,53.13 89.33,52.00 90.59,52.00 C91.47,52.00 92.42,51.10 92.71,50.00 C93.14,48.35 94.07,48.00 98.00,48.00 C101.93,48.00 102.86,48.35 103.29,50.00 C103.58,51.10 104.48,52.00 105.29,52.00 C106.10,52.00 107.00,52.90 107.29,54.00 C107.58,55.10 108.53,56.00 109.41,56.00 C110.56,56.00 111.00,56.96 111.00,59.50 C111.00,61.94 111.45,63.00 112.50,63.00 C113.32,63.00 114.00,63.67 114.00,64.50 C114.00,65.55 115.06,66.00 117.50,66.00 C120.04,66.00 121.00,66.44 121.00,67.59 C121.00,68.47 121.90,69.42 123.00,69.71 C124.10,70.00 125.00,70.86 125.00,71.62 C125.00,72.38 125.68,73.00 126.50,73.00 C127.32,73.00 128.00,72.38 128.00,71.62 C128.00,70.86 128.90,70.00 130.00,69.71 C131.43,69.33 132.00,68.35 132.00,66.21 C132.00,64.07 131.43,63.09 130.00,62.71 C128.47,62.31 128.00,61.35 128.00,58.59 C128.00,55.67 128.37,55.00 130.00,55.00 C131.62,55.00 132.00,54.33 132.00,51.50 C132.00,48.67 132.38,48.00 134.00,48.00 C135.33,48.00 136.00,48.67 136.00,50.00 C136.00,51.11 136.67,52.00 137.50,52.00 C138.33,52.00 139.00,51.11 139.00,50.00 C139.00,48.19 139.67,48.00 145.88,48.00 C151.93,48.00 152.83,48.24 153.29,50.00 C153.58,51.10 154.53,52.00 155.41,52.00 C156.28,52.00 157.00,52.67 157.00,53.50 C157.00,54.33 156.28,55.00 155.41,55.00 C154.53,55.00 153.58,55.90 153.29,57.00 C152.90,58.50 151.93,59.00 149.38,59.00 L 146.00 59.00 L 146.00 69.50 C146.00,77.77 145.71,80.00 144.62,80.00 C143.86,80.00 143.00,80.90 142.71,82.00 C142.42,83.10 141.47,84.00 140.59,84.00 C139.44,84.00 139.00,84.96 139.00,87.50 L 139.00 91.00 L 133.50 91.00 C129.28,91.00 128.00,90.65 128.00,89.50 C128.00,88.68 127.32,88.00 126.50,88.00 C125.49,88.00 125.00,89.01 125.00,91.09 C125.00,93.35 124.46,94.33 123.00,94.71 C121.90,95.00 121.00,95.86 121.00,96.62 C121.00,97.38 120.32,98.00 119.50,98.00 C118.24,98.00 118.00,100.28 118.00,112.50 C118.00,124.72 118.24,127.00 119.50,127.00 C120.32,127.00 121.00,127.68 121.00,128.50 C121.00,129.63 119.78,130.00 116.00,130.00 L 111.00 130.00 L 111.00 117.50 C111.00,105.67 110.89,105.00 109.00,105.00 C107.11,105.00 107.00,105.67 107.00,117.50 L 107.00 130.00 L 100.00 130.00 L 100.00 123.00 C100.00,117.44 100.31,116.00 101.50,116.00 C102.72,116.00 103.00,114.33 103.00,107.00 C103.00,98.67 103.15,98.00 105.00,98.00 C106.11,98.00 107.00,97.33 107.00,96.50 C107.00,95.45 105.94,95.00 103.50,95.00 C101.06,95.00 100.00,95.45 100.00,96.50 C100.00,97.75 97.94,98.00 87.50,98.00 C77.06,98.00 75.00,97.75 75.00,96.50 C75.00,95.68 74.28,95.00 73.41,95.00 C72.53,95.00 71.58,94.10 71.29,93.00 C70.61,90.42 64.00,90.05 64.00,92.59 C64.00,93.47 64.90,94.42 66.00,94.71 C67.80,95.18 68.00,96.07 68.00,103.65 C68.00,110.21 68.33,112.19 69.50,112.64 C70.32,112.95 71.00,113.84 71.00,114.61 C71.00,115.37 71.90,116.00 73.00,116.00 C74.76,116.00 75.00,116.67 75.00,121.50 C75.00,125.72 75.35,127.00 76.50,127.00 C77.32,127.00 78.00,127.68 78.00,128.50 C78.00,129.55 76.94,130.00 74.50,130.00 C72.06,130.00 71.00,129.55 71.00,128.50 C71.00,127.68 70.32,127.00 69.50,127.00 C68.46,127.00 68.00,125.96 68.00,123.62 C68.00,121.07 67.50,120.10 66.00,119.71 C64.56,119.33 64.00,118.35 64.00,116.20 C64.00,114.47 63.37,112.97 62.50,112.64 C61.36,112.20 61.00,110.36 61.00,105.03 C61.00,98.67 60.81,98.00 59.00,98.00 C57.39,98.00 57.00,98.67 57.00,101.38 C57.00,103.93 56.50,104.90 55.00,105.29 C53.25,105.75 53.00,106.65 53.00,112.50 C53.00,118.35 53.25,119.25 55.00,119.71 C56.43,120.09 57.00,121.07 57.00,123.21 C57.00,125.35 57.57,126.33 59.00,126.71 C60.10,127.00 61.00,127.86 61.00,128.62 ZM 42.82 85.67 C42.24,88.68 39.00,88.40 39.00,85.33 C39.00,84.60 39.93,84.00 41.07,84.00 C42.47,84.00 43.04,84.54 42.82,85.67 Z" fill="rgb(14,14,14)" />
+                <path d="M 0.00 85.50 L 0.00 0.00 L 93.00 0.00 L 186.00 0.00 L 186.00 85.50 L 186.00 171.00 L 93.00 171.00 L 0.00 171.00 L 0.00 85.50 ZM 61.00 128.62 C61.00,127.86 60.10,127.00 59.00,126.71 C57.57,126.33 57.00,125.35 57.00,123.21 C57.00,121.07 56.43,120.09 55.00,119.71 C53.25,119.25 53.00,118.35 53.00,112.50 C53.00,106.65 53.25,105.75 55.00,105.29 C56.50,104.90 57.00,103.93 57.00,101.38 C57.00,98.67 57.39,98.00 59.00,98.00 C60.81,98.00 61.00,98.67 61.00,105.03 C61.00,110.36 61.36,112.20 62.50,112.64 C63.37,112.97 64.00,114.47 64.00,116.20 C64.00,118.35 64.56,119.33 66.00,119.71 C67.50,120.10 68.00,121.07 68.00,123.62 C68.00,125.96 68.46,127.00 69.50,127.00 C70.32,127.00 71.00,127.68 71.00,128.50 C71.00,129.55 72.06,130.00 74.50,130.00 C76.94,130.00 78.00,129.55 78.00,128.50 C78.00,127.68 77.32,127.00 76.50,127.00 C75.35,127.00 75.00,125.72 75.00,121.50 C75.00,116.67 74.76,116.00 73.00,116.00 C71.90,116.00 71.00,115.37 71.00,114.61 C71.00,113.84 70.32,112.95 69.50,112.64 C68.33,112.19 68.00,110.21 68.00,103.65 C68.00,96.07 67.80,95.18 66.00,94.71 C64.90,94.42 64.00,93.47 64.00,92.59 C64.00,90.05 70.61,90.42 71.29,93.00 C71.58,94.10 72.53,95.00 73.41,95.00 C74.28,95.00 75.00,95.68 75.00,96.50 C75.00,97.75 77.06,98.00 87.50,98.00 C97.94,98.00 100.00,97.75 100.00,96.50 C100.00,95.45 101.06,95.00 103.50,95.00 C105.94,95.00 107.00,95.45 107.00,96.50 C107.00,97.33 106.11,98.00 105.00,98.00 C103.15,98.00 103.00,98.67 103.00,107.00 C103.00,114.33 102.72,116.00 101.50,116.00 C100.31,116.00 100.00,117.44 100.00,123.00 L 100.00 130.00 L 103.50 130.00 L 107.00 130.00 L 107.00 117.50 C107.00,105.67 107.11,105.00 109.00,105.00 C110.89,105.00 111.00,105.67 111.00,117.50 L 111.00 130.00 L 116.00 130.00 C119.78,130.00 121.00,129.63 121.00,128.50 C121.00,127.68 120.32,127.00 119.50,127.00 C118.24,127.00 118.00,124.72 118.00,112.50 C118.00,100.28 118.24,98.00 119.50,98.00 C120.32,98.00 121.00,97.38 121.00,96.62 C121.00,95.86 121.90,95.00 123.00,94.71 C124.46,94.33 125.00,93.35 125.00,91.09 C125.00,89.01 125.49,88.00 126.50,88.00 C127.32,88.00 128.00,88.68 128.00,89.50 C128.00,90.65 129.28,91.00 133.50,91.00 L 139.00 91.00 L 139.00 87.50 C139.00,84.96 139.44,84.00 140.59,84.00 C141.47,84.00 142.42,83.10 142.71,82.00 C143.00,80.90 143.86,80.00 144.62,80.00 C145.71,80.00 146.00,77.77 146.00,69.50 L 146.00 59.00 L 149.38 59.00 C151.93,59.00 152.90,58.50 153.29,57.00 C153.58,55.90 154.53,55.00 155.41,55.00 C156.28,55.00 157.00,54.33 157.00,53.50 C157.00,52.67 156.28,52.00 155.41,52.00 C154.53,52.00 153.58,51.10 153.29,50.00 C152.83,48.24 151.93,48.00 145.88,48.00 C139.67,48.00 139.00,48.19 139.00,50.00 C139.00,51.11 138.33,52.00 137.50,52.00 C136.67,52.00 136.00,51.11 136.00,50.00 C136.00,48.67 135.33,48.00 134.00,48.00 C132.38,48.00 132.00,48.67 132.00,51.50 C132.00,54.33 131.62,55.00 130.00,55.00 C128.37,55.00 128.00,55.67 128.00,58.59 C128.00,61.35 128.47,62.31 130.00,62.71 C131.43,63.09 132.00,64.07 132.00,66.21 C132.00,68.35 131.43,69.33 130.00,69.71 C128.90,70.00 128.00,70.86 128.00,71.62 C128.00,72.38 127.32,73.00 126.50,73.00 C125.68,73.00 125.00,72.38 125.00,71.62 C125.00,70.86 124.10,70.00 123.00,69.71 C121.90,69.42 121.00,68.47 121.00,67.59 C121.00,66.44 120.04,66.00 117.50,66.00 C115.06,66.00 114.00,65.55 114.00,64.50 C114.00,63.67 113.32,63.00 112.50,63.00 C111.45,63.00 111.00,61.94 111.00,59.50 C111.00,56.96 110.56,56.00 109.41,56.00 C108.53,56.00 107.58,55.10 107.29,54.00 C107.00,52.90 106.10,52.00 105.29,52.00 C104.48,52.00 103.58,51.10 103.29,50.00 C102.86,48.35 101.93,48.00 98.00,48.00 C94.07,48.00 93.14,48.35 92.71,50.00 C92.42,51.10 91.47,52.00 90.59,52.00 C89.33,52.00 89.00,53.13 89.00,57.50 C89.00,61.72 88.65,63.00 87.50,63.00 C86.67,63.00 86.00,62.11 86.00,61.00 C86.00,59.67 85.33,59.00 84.00,59.00 C82.38,59.00 82.00,58.33 82.00,55.50 C82.00,52.17 81.83,52.00 78.50,52.00 C75.17,52.00 75.00,51.83 75.00,48.50 C75.00,45.17 74.83,45.00 71.50,45.00 C69.06,45.00 68.00,45.45 68.00,46.50 C68.00,47.33 67.11,48.00 66.00,48.00 C64.67,48.00 64.00,48.67 64.00,50.00 C64.00,51.61 63.33,52.00 60.62,52.00 C58.07,52.00 57.10,52.50 56.71,54.00 C56.42,55.10 55.47,56.00 54.59,56.00 C53.72,56.00 53.00,56.67 53.00,57.50 C53.00,58.33 52.33,59.00 51.50,59.00 C50.45,59.00 50.00,60.06 50.00,62.50 C50.00,65.33 49.62,66.00 48.00,66.00 C46.24,66.00 46.00,66.67 46.00,71.50 C46.00,75.72 45.65,77.00 44.50,77.00 C43.45,77.00 43.00,78.06 43.00,80.50 C43.00,82.94 43.45,84.00 44.50,84.00 C45.55,84.00 46.00,85.06 46.00,87.50 C46.00,90.33 46.38,91.00 48.00,91.00 C49.74,91.00 50.00,91.67 50.00,96.09 C50.00,100.35 49.67,101.27 48.00,101.71 C46.24,102.17 46.00,103.07 46.00,109.12 C46.00,115.33 46.19,116.00 48.00,116.00 C49.81,116.00 50.00,116.67 50.00,123.00 L 50.00 130.00 L 55.50 130.00 C59.52,130.00 61.00,129.63 61.00,128.62 ZM 42.82 85.67 C43.04,84.54 42.47,84.00 41.07,84.00 C39.93,84.00 39.00,84.60 39.00,85.33 C39.00,88.40 42.24,88.68 42.82,85.67 Z" fill="rgb(238,238,238)" />
+              </g>
+
+            </svg>
           </div>
 
           {/* Social Media Icons */}
-          <div id="contact" className="flex space-x-4 mt-5">
+          <div id="contact" className="flex space-x-9 mt-17">
             {/* Twitter Icon */}
             <a href="#" className="text-gray-600 hover:text-gray-800 transition-colors">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
               </svg>
             </a>
@@ -175,25 +145,25 @@ const Footer = ()=>{
         </div>
 
         {/* Copyright and Links */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between text-sm text-gray-600 space-y-4 md:space-y-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 tracking-tight font-normal text-[13px] text-gray-600">
           {/* Left Section - Copyright */}
-          <div className="md:flex-1">
-            <p> 2024 Copyright CamelWeb. All rights reserved.</p>
+          <div className="-ml-4">
+            <p className="pt-10">&copy; 2022 Copyright CamelWeb.   All rights reserved.</p>
           </div>
 
           {/* Center Section - Branding */}
-          <div className="text-center md:flex-1">
-            <a href="#" className="hover:text-gray-800 transition-colors">
+          <div className="text-center mt-10 pr-29">
+            <a href="#" className="hover:text-gray-800 transition-colors ">
               Branding by High Contrast
             </a>
           </div>
 
           {/* Right Section - Links */}
-          <div className="flex flex-wrap gap-6 justify-center md:justify-end md:flex-1">
-            <a href="#" className="hover:text-gray-800 transition-colors">Help & Support</a>
-            <a href="#" className="hover:text-gray-800 transition-colors">Privacy</a>
-            <a href="#" className="hover:text-gray-800 transition-colors">Terms of Use</a>
-            <a href="#" className="hover:text-gray-800 transition-colors">Cookie policy</a>
+          <div className="text-center md:text-right mt-10">
+            <a href="#" className="hover:text-gray-800 transition-colors mr-5">Help & Support</a>
+            <a href="#" className="hover:text-gray-800 transition-colors mr-9">Privacy</a>
+            <a href="#" className="hover:text-gray-800 transition-colors mr-10">Terms of Use</a>
+            <a href="#" className="hover:text-gray-800 transition-colors -mr-2">Cookie policy</a>
           </div>
         </div>
 
@@ -205,7 +175,7 @@ const Footer = ()=>{
 
 const LocationPhotography = () => {
   return (
-    < section id = "photography-section" className = "bg-white w-[1245px] mb-20 h-[379px] mx-auto" >
+    < section id="photography-section" className="bg-white w-[1245px] mb-20 h-[379px] mx-auto" >
 
       <div className="">
         {/* Full-width orange line */}
@@ -251,90 +221,93 @@ const LocationPhotography = () => {
           </div>
         </div>
       </div>
-      </section >
+    </section >
   );
 };
 
 const PhotoGrid = () => {
   return (
     <section id="photo-grid" className="bg-white mx-auto">
-        <div className="w-[1246px] mx-auto">
-          {/* Photo Grid */}
-          <div className="grid grid-cols-2 gap-[28px] mx-auto">
-            {/* Top row */}
-            <div className="w-photo-w h-photo-h">
-              <img 
-                src="/images/1.jpg" 
-                alt="CamelWeb employees in library area" 
-                className="w-full h-full"
-              />
-            </div>
-            <div className="w-photo-w h-photo-h">
-              <img 
-                src="/images/2.jpg" 
-                alt="CamelWeb team meeting" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            
-            {/* Middle row */}
-            <div className="w-photo-w h-photo-h">
-              <img 
-                src="/images/3.jpg" 
-                alt="CamelWeb office space with plants" 
-                className="w-full h-full"
-              />
-            </div>
-            <div className="w-photo-w h-photo-h">
-              <img 
-                src="/images/4.jpg" 
-                alt="CamelWeb conference room" 
-                className="w-full h-full"
-              />
-            </div>
-            
-            {/* Bottom row  */}
-            <div className="h-photo-bottom-h w-[1246px]">
-              <img 
-                src="/images/5.jpg" 
-                alt="CamelWeb office with city view" 
-                className="w-full h-full"
-              />
-            </div>
+      <div className="w-[1246px] mx-auto">
+        {/* Photo Grid */}
+        <div className="grid grid-cols-2 gap-[28px] mx-auto">
+          {/* Top row */}
+          <div className="w-photo-w h-photo-h">
+            <img
+              src="/images/1.jpg"
+              alt="CamelWeb employees in library area"
+              className="w-full h-full"
+            />
+          </div>
+          <div className="w-photo-w h-photo-h">
+            <img
+              src="/images/2.jpg"
+              alt="CamelWeb team meeting"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Middle row */}
+          <div className="w-photo-w h-photo-h">
+            <img
+              src="/images/3.jpg"
+              alt="CamelWeb office space with plants"
+              className="w-full h-full"
+            />
+          </div>
+          <div className="w-photo-w h-photo-h">
+            <img
+              src="/images/4.jpg"
+              alt="CamelWeb conference room"
+              className="w-full h-full"
+            />
+          </div>
+
+          {/* Bottom row  */}
+          <div className="h-photo-bottom-h w-[1246px]">
+            <img
+              src="/images/5.jpg"
+              alt="CamelWeb office with city view"
+              className="w-full h-full"
+            />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
   );
 }
+
+const Applications = () => {
+  return (
+    <section id="applications" className="bg-white w-[1247px] h-[127px] mx-auto mb-20">
+      <div className="py-10 bg-white mx-auto">
+        <div className="h-px bg-black"></div>
+      </div>
+      <div>
+        {/* Next label */}
+        <p className="text-medium mb-2">Next</p>
+
+        {/* Applications heading with arrow */}
+        <div className="flex items-center justify-between">
+          <h2 className="text-4xl font-medium text-black">Applications</h2>
+          <button className="text-black hover:text-gray-600 transition-colors">
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <div className="max-w-[1366px] mx-auto">
       <Header />
       <LocationPhotography />
       <PhotoGrid />
-
-      <section className="bg-white w-[1247px] mx-auto">
-        <div className="py-10">
-          <div className="h-px bg-black"></div>
-        </div>
-      </section>
-
-      <section id="applications" className="bg-white max-w-[1247px] h-[127px] mx-auto mb-10">
-        <div className="px-6 py-10">
-          {/* Next label */}
-          <p className="text-medium mb-2">Next</p>
-          
-          {/* Applications heading with arrow */}
-          <div className="flex items-center justify-between">
-            <h2 className="text-4xl font-medium text-black">Applications</h2>
-            <button className="text-black hover:text-gray-600 transition-colors">
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
+      <Applications />
       <Footer />
     </div>
   );
