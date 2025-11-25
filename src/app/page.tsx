@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Syne } from 'next/font/google';
+import { Open_Sans, Syne } from 'next/font/google';
 import { Poppins } from 'next/font/google';
 
 const poppinsFont = Poppins({
@@ -14,6 +14,10 @@ const syneFont = Syne({
   weight: ['400', '500', '600', '700'],
 });
 
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ['400', '500', '600', '700'],
+})
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
@@ -103,22 +107,21 @@ const Header = () => {
 
 const Footer = ()=>{
   return (
-    <footer id="about" className="bg-gray-50 border-t border-gray-200 ">
-      <div className="px-16 py-8 max-w-[1366px] h-[244px] mx-auto">
+    <footer id="about" className="bg-gray-50 border-t border-gray-200">
+      <div className={`px-16 py-8 max-w-[1366px] h-[244px] mx-auto tracking-tight ${openSans.className}`}>
         {/* Main Footer Content */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between ">
           {/* Logo/Brand */}
-          <div className="flex items-center">
-            <div className="w-8 h-8 mr-3 mb-5">
+            <div className="w-8 h-8 mr-8 mb-10">
               {/* Camel Icon */}
               <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                width="60.000000pt" height="50.000000pt" viewBox="0 0 120.000000 101.000000"
-                preserveAspectRatio="xMidYMid meet">
+                width="105.000000pt" height="95.000000pt" viewBox="0 0 120.000000 101.000000"
+                preserveAspectRatio="xMidYMid meet" className='-mx-10 -mt-3'>
                 <metadata>
                   Created by potrace 1.10, written by Peter Selinger 2001-2011
                 </metadata>
                 <g transform="translate(0.000000,101.000000) scale(0.100000,-0.100000)"
-                  fill="#000000" stroke="none">
+                  fill="#000000ff" stroke="none">
                   <path d="M430 779 c0 -17 -27 -39 -49 -39 -12 0 -21 -5 -21 -11 0 -14 -26 -39
                             -40 -39 -8 0 -10 -8 -7 -21 3 -12 0 -22 -9 -26 -8 -3 -14 -19 -14 -39 0 -19
                             -4 -34 -10 -34 -5 0 -10 -9 -10 -20 0 -11 5 -20 10 -20 6 0 10 -11 10 -25 0
@@ -154,13 +157,12 @@ const Footer = ()=>{
                 </g>
               </svg>
             </div>
-          </div>
 
           {/* Social Media Icons */}
-          <div id="contact" className="flex space-x-4 mt-5">
+          <div id="contact" className="flex space-x-9 mt-17">
             {/* Twitter Icon */}
             <a href="#" className="text-gray-600 hover:text-gray-800 transition-colors">
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
               </svg>
             </a>
@@ -175,21 +177,21 @@ const Footer = ()=>{
         </div>
 
         {/* Copyright and Links */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between text-sm text-gray-600 space-y-4 md:space-y-0">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between text-sm text-gray-600 space-y-4 md:space-y-19">
           {/* Left Section - Copyright */}
           <div className="md:flex-1">
-            <p> 2024 Copyright CamelWeb. All rights reserved.</p>
+            <p className="pt-10"> 2024 Copyright CamelWeb. All rights reserved.</p>
           </div>
 
           {/* Center Section - Branding */}
-          <div className="text-center md:flex-1">
-            <a href="#" className="hover:text-gray-800 transition-colors">
+          <div className="text-center md:flex-1 mb-8">
+            <a href="#" className="hover:text-gray-800 transition-colors mr-28">
               Branding by High Contrast
             </a>
           </div>
 
           {/* Right Section - Links */}
-          <div className="flex flex-wrap gap-6 justify-center md:justify-end md:flex-1">
+          <div className="flex flex-wrap gap-6 justify-center md:justify-end md:flex-1 -mt-8 -mr-1">
             <a href="#" className="hover:text-gray-800 transition-colors">Help & Support</a>
             <a href="#" className="hover:text-gray-800 transition-colors">Privacy</a>
             <a href="#" className="hover:text-gray-800 transition-colors">Terms of Use</a>
