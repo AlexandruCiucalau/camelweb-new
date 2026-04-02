@@ -21,8 +21,8 @@ const openSans = Open_Sans({
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className="bg-camel-500 text-white relative h-[768px] w-[1366px] mx-auto">
-      <div className="flex items-center justify-between px-15 py-6">
+    <header className="bg-camel-500 text-white relative">
+      <div className="flex items-center justify-between px-15 py-6 max-w-[1366px] mx-auto">
         {/* Logo */}
         <div className={`text-2xl font-bold tracking-wide ${syneFont.className}`}>
           CAMELWEB
@@ -55,7 +55,7 @@ const Header = () => {
       </div>
 
       {/* Full-width horizontal line*/}
-      <div className="w-[1246px] mx-auto">
+      <div className="max-w-[1246px] mx-auto">
         <div className=" h-px bg-white"></div>
       </div>
 
@@ -108,7 +108,7 @@ const Header = () => {
 const Footer = () => {
   return (
     <footer id="about" className="bg-gray-50 border-t border-gray-200">
-      <div className={`px-16 py-8 max-w-[1366px] h-[244px] mx-auto  tracking-tight ${openSans.className}`}>
+      <div className={`px-16 py-8 max-w-[1366px] mx-auto  tracking-tight ${openSans.className}`}>
         {/* Main Footer Content */}
         <div className="flex items-center justify-between ">
           {/* Logo/Brand */}
@@ -170,9 +170,9 @@ const Footer = () => {
 
 const LocationPhotography = () => {
   return (
-    < section id="photography-section" className="bg-white w-[1245px] mb-20 h-[379px] mx-auto" >
+    < section id="photography-section" className="bg-white" >
 
-      <div className="">
+      <div className="max-w-[1245px] mb-20 mx-auto">
         {/* Full-width orange line */}
         <div className="h-[1.5] mx-auto bg-camel-500 mt-18 mb-3 "></div>
 
@@ -225,10 +225,9 @@ const LocationPhotography = () => {
 
 const PhotoGrid = () => {
   return (
-    <section id="photo-grid" className="bg-white mx-auto">
-      <div className="w-[1246px] mx-auto">
+    <section id="photo-grid" className="bg-white">
         {/* Photo Grid */}
-        <div className="grid grid-cols-2 gap-[28px] mx-auto">
+        <div className="grid grid-cols-2 max-w-[1246px] gap-[28px] mx-auto">
           {/* Top row */}
           <div className="w-photo-w h-photo-h">
             <img
@@ -262,7 +261,7 @@ const PhotoGrid = () => {
           </div>
 
           {/* Bottom row  */}
-          <div className="h-photo-bottom-h w-[1246px]">
+          <div className="col-span-2 h-photo-bottom-h">
             <img
               src="/images/5.jpg"
               alt="CamelWeb office with city view"
@@ -270,29 +269,30 @@ const PhotoGrid = () => {
             />
           </div>
         </div>
-      </div>
     </section>
   );
 }
 
 const Applications = () => {
   return (
-    <section id="applications" className="bg-white w-[1247px] h-[127px] mx-auto mt-10 mb-24">
-      <div className="py-10 bg-white mx-auto">
-        <div className="h-px bg-black"></div>
-      </div>
-      <div>
-        {/* Next label */}
-        <p className={`text-medium mb-1 mt-4 text-[13px] font-normal ${poppinsFont.className}`}>Next</p>
+    <section id="applications" className="bg-white">
+      <div className='max-w-[1247px] mx-auto mt-10 mb-24'>
+        <div className="py-10 bg-white mx-auto">
+          <div className="h-px bg-black"></div>
+        </div>
+        <div>
+          {/* Next label */}
+          <p className={`text-medium mb-1 mt-4 text-[13px] font-normal ${poppinsFont.className}`}>Next</p>
 
-        {/* Applications heading with arrow */}
-        <div className="flex items-center justify-between">
-          <h4 className={`text-4xl font-semibold text-black tracking-tight text-[30px] ${syneFont.className}`}>Applications</h4>
-          <button className="text-black hover:text-gray-600 transition-colors mr-7 mt-3">
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 21 21">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+          {/* Applications heading with arrow */}
+          <div className="flex items-center justify-between">
+            <h4 className={`text-4xl font-semibold text-black tracking-tight text-[30px] ${syneFont.className}`}>Applications</h4>
+            <button className="text-black hover:text-gray-600 transition-colors mr-7 mt-3">
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 21 21">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
