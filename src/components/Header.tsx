@@ -52,13 +52,13 @@ export default function Header () {
           Photography
         </h4>
         {/* Main headline */}
-        <h2 className={`text-center text-[67px] mt-11 font-semibold leading-20 mx-auto ${syneFont.className}`}>
+        <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] mt-11 font-semibold leading-20 mx-auto ${syneFont.className}`}>
           The photographs act as a
         </h2>
-        <h2 className={`text-center text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
+        <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
           support system for everything
         </h2>
-        <h2 className={`text-center text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
+        <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
           CamelWeb stands for.
         </h2>
       </div>
