@@ -28,7 +28,7 @@ export default function LocationPhotography () {
             The location photography aims to show the CamelWeb offices and employees in order to
           </p>
           <p className={`text-gray-700 leading-relaxed mb-3`}>
-            communicate the brand's values.
+            communicate the brand&apos;s values.
           </p>
           <p className={`text-gray-700 leading-normal mb-6`}>
             Thus, all images in this category must meet the following criteria:
