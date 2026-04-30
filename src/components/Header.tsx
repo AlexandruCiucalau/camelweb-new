@@ -1,5 +1,7 @@
 import { useState  } from "react";
 import { Open_Sans, Syne } from 'next/font/google';
+import Link from "next/link";
+
 const syneFont = Syne({
   subsets: ["latin"],
   weight: ['400', '500', '600', '700'],
@@ -9,7 +11,7 @@ export default function Header () {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header className="bg-camel-500 text-white relative">
-      <div className="flex items-center justify-between px-15 py-6 max-w-[1366px] mx-auto">
+      <div className="flex items-center justify-between lg:px-15 px-6 py-6 max-w-[1366px] mx-auto">
         {/* Logo */}
         <div className={`text-2xl font-bold tracking-wide ${syneFont.className}`}>
           CAMELWEB
@@ -29,10 +31,11 @@ export default function Header () {
 
           {/* Mobile menu dropdown*/}
           {isMenuOpen && (
-            <div className="absolute -right-14 mt-3 bg-camel-500 border border-white/20 shadow-lg rounded-md">
+            <div className="absolute lg:-right-14 -right-4 mt-3 bg-camel-500 border border-white/20 shadow-lg rounded-md">
               <nav className="py-2">
                 <a href="#photo-grid" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Photography</a>
-                <a href="#applications" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Applications</a>
+                {/*<a href="#applications" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Applications</a>*/}
+                <Link href="/applications" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Applications</Link>
                 <a href="#about" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">About</a>
                 <a href="#contact" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Contact</a>
               </nav>
