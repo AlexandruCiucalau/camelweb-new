@@ -15,7 +15,7 @@ export default function LocationPhotography () {
   return (
     < section id="photography-section" className="bg-white" >
 
-      <div className="max-w-[1245px] mb-20 mx-auto">
+      <div className="max-w-[1245px] mb-20 mx-auto px-4 lg:px-0">
         {/* Full-width orange line */}
         <div className="h-[1.5] mx-auto bg-camel-500 mt-18 mb-3 "></div>
 
@@ -37,25 +37,25 @@ export default function LocationPhotography () {
           {/* Criteria list */}
           <div className={`space-y-2 text-gray-700`}>
             <div className="flex items-start">
-              <svg className='mt-1 mr-3 -ml-1' width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className='shrink-0 mt-1 mr-3 lg:-ml-1' width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.75 0V12H8.75" stroke="black" strokeWidth="1.5" />
                 <path d="M5.75 8L9.75 12L5.75 16" stroke="black" strokeWidth="1.5" />
               </svg>
               <p>Warm, earthy tones and natural light.</p>
             </div>
             <div className="flex items-start pt-3 pb-5">
-              <svg  className='mt-1 mr-3 -ml-1' width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg  className='shrink-0 mt-1 mr-3 lg:-ml-1' width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.75 0V12H8.75" stroke="black" strokeWidth="1.5" />
                 <path d="M5.75 8L9.75 12L5.75 16" stroke="black" strokeWidth="1.5" />
               </svg>
               <p>CamelWeb employees while they enjoy themselves and their work.</p>
             </div>
             <div className="flex items-start">
-              <svg className='mt-3 mr-3 -ml-1' width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg className='shrink-0 lg:mt-3 mt-1 mr-3 lg:-ml-1' width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.75 0V12H8.75" stroke="black" strokeWidth="1.5" />
                 <path d="M5.75 8L9.75 12L5.75 16" stroke="black" strokeWidth="1.5" />
               </svg>
-              <p className="text-gray-700 leading-[1.1] whitespace-pre-line " >
+              <p className="text-gray-700 leading-[1.1] lg:whitespace-pre-line " >
                 Approach different space perspectives, with close-ups of the people and wide frames of {"\n"} the office rooms.
               </p>
             </div>
