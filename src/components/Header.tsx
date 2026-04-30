@@ -13,9 +13,9 @@ export default function Header () {
     <header className="bg-camel-500 text-white relative">
       <div className="flex items-center justify-between lg:px-15 px-6 py-6 max-w-[1366px] mx-auto">
         {/* Logo */}
-        <div className={`text-2xl font-bold tracking-wide ${syneFont.className}`}>
+        <Link href="/" className={`text-2xl font-bold tracking-wide ${syneFont.className}`}>
           CAMELWEB
-        </div>
+        </Link>
 
         {/* Hamburger Menu*/}
         <div className="relative">
