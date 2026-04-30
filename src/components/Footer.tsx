@@ -16,9 +16,9 @@ const syneFont = Syne({
 export default function Footer () {
   return (
     <footer id="about" className="bg-gray-50 border-t border-gray-200">
-      <div className={`px-16 py-8 max-w-[1366px] mx-auto  tracking-tight ${openSans.className}`}>
+      <div className={`px-4 py-8 sm:px-6 md:px-12 lg:px-16 py-8 max-w-[1366px] mx-auto  tracking-tight ${openSans.className}`}>
         {/* Main Footer Content */}
-        <div className="flex items-center justify-between ">
+        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
           {/* Logo/Brand */}
           <div className="w-8 h-8 mr-8 mb-6">
 
@@ -30,7 +30,7 @@ export default function Footer () {
           </div>
 
           {/* Social Media Icons */}
-          <div id="contact" className="flex space-x-9 mt-17">
+          <div id="contact" className="flex space-x-9 lg:mt-17">
             {/* Twitter Icon */}
             <a href="#" className="text-gray-600 hover:text-gray-800 transition-colors">
               <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,25 +48,25 @@ export default function Footer () {
         </div>
 
         {/* Copyright and Links */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 tracking-tight font-normal text-[13px] text-gray-600">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 tracking-tight font-normal text-[13px] text-gray-600">
           {/* Left Section - Copyright */}
-          <div className="">
-            <p className="pt-10">&copy; 2022 Copyright CamelWeb. All rights reserved.</p>
+          <div className="lg:px-0 lg:pt-10 lg:ml-0 ml-3 px-7">
+            <p >&copy; 2022 Copyright CamelWeb. All rights reserved.</p>
           </div>
 
           {/* Center Section - Branding */}
-          <div className="text-center mt-10 pr-29">
+          <div className="text-center lg:mt-10 lg:pr-29">
             <a href="#" className="hover:text-gray-800 transition-colors ">
               Branding by High Contrast
             </a>
           </div>
 
           {/* Right Section - Links */}
-          <div className="text-center md:text-right mt-10">
-            <a href="#" className="hover:text-gray-800 transition-colors mr-8">Help & Support</a>
-            <a href="#" className="hover:text-gray-800 transition-colors mr-8">Privacy</a>
-            <a href="#" className="hover:text-gray-800 transition-colors mr-9">Terms of Use</a>
-            <a href="#" className="hover:text-gray-800 transition-colors -mr-3">Cookie policy</a>
+          <div className="text-center md:text-right lg:mt-10">
+            <a href="#" className="hover:text-gray-800 transition-colors lg:mr-8 mr-2">Help & Support</a>
+            <a href="#" className="hover:text-gray-800 transition-colors lg:mr-8 mr-2">Privacy</a>
+            <a href="#" className="hover:text-gray-800 transition-colors lg:mr-9 mr-2">Terms of Use</a>
+            <a href="#" className="hover:text-gray-800 transition-colors lg:-mr-3">Cookie policy</a>
           </div>
         </div>
 
