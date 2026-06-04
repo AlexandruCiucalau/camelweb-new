@@ -9,7 +9,7 @@ export default function ImageSection() {
                     </div>
                 </div>
                 <div className="-translate-x-23 ">
-                    <div className="w-[714] h-[1071.8] overflow-hidden ">
+                    <div className="w-[714px] h-[1071.8px] overflow-hidden ">
                         <img src="/images/7.png"
                             className="w-full h-full object-cover" />
                     </div>

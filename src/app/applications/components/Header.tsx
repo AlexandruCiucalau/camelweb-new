@@ -34,7 +34,7 @@ export default function Header () {
           {isMenuOpen && (
             <div className="absolute lg:-right-14 -right-4 mt-3 bg-camel-500 border border-white/20 shadow-lg rounded-md">
               <nav className="py-2">
-                <a href="#photo-grid" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Photography</a>
+                <a href="/" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Photography</a>
                 {/*<a href="#applications" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Applications</a>*/}
                 <Link href="/applications" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Applications</Link>
                 <a href="#about" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">About</a>
@@ -77,7 +77,7 @@ export default function Header () {
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 py-12">
         <button
           onClick={() => {
-            document.getElementById('photography-section')?.scrollIntoView({ behavior: 'smooth' })
+            document.getElementById('image-section')?.scrollIntoView({ behavior: 'smooth' })
           }} className="text-white opacity-70 hover:opacity-100 transition-opacity">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
