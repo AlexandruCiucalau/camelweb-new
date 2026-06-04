@@ -1,16 +1,17 @@
 import { useState  } from "react";
 import { Open_Sans, Syne } from 'next/font/google';
 import Link from "next/link";
-
+import { useRouter } from "next/navigation";
 const syneFont = Syne({
   subsets: ["latin"],
   weight: ['400', '500', '600', '700'],
 });
 
 export default function Header () {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <header className="bg-camel-500 text-white relative">
+    <header className="bg-camel-500 text-white relative lg:h-[768px]">
       <div className="flex items-center justify-between lg:px-15 px-6 py-6 max-w-[1366px] mx-auto">
         {/* Logo */}
         <Link href="/" className={`text-2xl font-bold tracking-wide ${syneFont.className}`}>
@@ -46,28 +47,34 @@ export default function Header () {
 
       {/* Full-width horizontal line*/}
       <div className="max-w-[1246px] mx-auto">
-        <div className=" h-px bg-white"></div>
+        <div className=" h-[2px] bg-white"></div>
       </div>
 
-      <div className="px-7 py-37">
+      <div className="px-7 py-18">
         {/* Photography label */}
         <h4 className={`text-center text-3xl font-semibold tracking-wide ${syneFont.className}`}>
-          Photography
+          Applications
         </h4>
         {/* Main headline */}
         <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] mt-11 font-semibold leading-20 mx-auto ${syneFont.className}`}>
-          The photographs act as a
+          This manual&apos;s guidelines offer
         </h2>
         <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
-          support system for everything
+          a steady and unified base for
         </h2>
         <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
-          CamelWeb stands for.
+          building whatever new
+        </h2>
+        <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
+          applications the brand
+        </h2>
+        <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
+          demands.
         </h2>
       </div>
 
       {/* Down arrow */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 py-11">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 py-12">
         <button
           onClick={() => {
             document.getElementById('photography-section')?.scrollIntoView({ behavior: 'smooth' })
@@ -79,8 +86,8 @@ export default function Header () {
       </div>
 
       {/* Left and Right arrows */}
-      <div className="absolute bottom-13 right-14 flex space-x-5 py-">
-        <button className="w-8 h-8 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
+      <div className="absolute bottom-15 right-15 flex space-x-5">
+        <button onClick={() => router.push("/")} className="w-8 h-8 rounded-full bg-black/30 backdrop-blur-sm flex items-center justify-center text-white hover:bg-opacity-30 transition-all">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" />
           </svg>

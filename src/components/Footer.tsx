@@ -48,14 +48,14 @@ export default function Footer () {
         </div>
 
         {/* Copyright and Links */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 tracking-tight font-normal text-[13px] text-gray-600">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 tracking-[-0.3px] font-normal leading-[13px] text-[13px] text-gray-600">
           {/* Left Section - Copyright */}
           <div className="lg:px-0 lg:pt-10 lg:ml-0 ml-3 px-7">
             <p >&copy; 2022 Copyright CamelWeb. All rights reserved.</p>
           </div>
 
           {/* Center Section - Branding */}
-          <div className="text-center lg:mt-10 lg:pr-29">
+          <div className="text-center lg:mt-9 lg:pr-27">
             <a href="#" className="hover:text-gray-800 transition-colors ">
               Branding by High Contrast
             </a>
