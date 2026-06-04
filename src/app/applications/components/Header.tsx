@@ -34,7 +34,7 @@ export default function Header () {
           {isMenuOpen && (
             <div className="absolute lg:-right-14 -right-4 mt-3 bg-camel-500 border border-white/20 shadow-lg rounded-md">
               <nav className="py-2">
-                <a href="/" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Photography</a>
+                <Link href="/" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Photography</Link>
                 {/*<a href="#applications" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Applications</a>*/}
                 <Link href="/applications" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Applications</Link>
                 <a href="#about" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">About</a>
