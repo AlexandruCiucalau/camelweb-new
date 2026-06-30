@@ -25,7 +25,7 @@ export default function TextArea() {
         <p
           className={`text-[20px] font-normal leading-[22px] ${poppinsFont.className}`}
         >
-          We use icons that resonate with CamelWeb's brand identity,
+          We use icons that resonate with CamelWeb&apos;s brand identity,
           representing elements like the <br />
           world and people, actions, values, etc.
           They clearly communicate ideas through the <br />
