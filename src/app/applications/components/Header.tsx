@@ -37,7 +37,7 @@ export default function Header () {
                 <Link href="/" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Photography</Link>
                 {/*<a href="#applications" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Applications</a>*/}
                 <Link href="/applications" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Applications</Link>
-                <a href="#about" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">About</a>
+                <Link href="/iconography" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Iconography</Link>
                 <a href="#contact" className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">Contact</a>
               </nav>
             </div>
