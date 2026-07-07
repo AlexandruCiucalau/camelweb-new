@@ -57,19 +57,7 @@ export default function Header () {
         </h4>
         {/* Main headline */}
         <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] mt-11 font-semibold leading-20 mx-auto ${syneFont.className}`}>
-          The iconography
-        </h2>
-        <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
-          complements the brand&apos;s
-        </h2>
-        <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
-          visual identity and camel
-        </h2>
-        <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
-          symbol, tying it all together in
-        </h2>
-        <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
-          a suble, yet effective way.
+          The iconography <br/>complements the brand&apos;s <br/>visual identity and camel <br/>symbol, tying it all together in <br/>a suble, yet effective way.
         </h2>
       </div>
 

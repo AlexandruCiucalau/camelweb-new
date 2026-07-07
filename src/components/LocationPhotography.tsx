@@ -25,10 +25,7 @@ export default function LocationPhotography () {
         {/* Description */}
         <div className={`mb-8 text-xl tracking-tight font-medium ${poppinsFont.className}`}>
           <p className={`text-gray-700 leading-tight -mb-2`}>
-            The location photography aims to show the CamelWeb offices and employees in order to
-          </p>
-          <p className={`text-gray-700 leading-relaxed mb-3`}>
-            communicate the brand&apos;s values.
+            The location photography aims to show the CamelWeb offices and employees in order to <br/>communicate the brand&apos;s values.
           </p>
           <p className={`text-gray-700 leading-normal mb-6`}>
             Thus, all images in this category must meet the following criteria:

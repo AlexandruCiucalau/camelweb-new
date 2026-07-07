@@ -57,19 +57,7 @@ export default function Header () {
         </h4>
         {/* Main headline */}
         <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] mt-11 font-semibold leading-20 mx-auto ${syneFont.className}`}>
-          This manual&apos;s guidelines offer
-        </h2>
-        <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
-          a steady and unified base for
-        </h2>
-        <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
-          building whatever new
-        </h2>
-        <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
-          applications the brand
-        </h2>
-        <h2 className={`text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-19 mx-auto ${syneFont.className}`}>
-          demands.
+          This manual&apos;s guidelines offer <br/>a steady and unified base for <br/>building whatever new <br/>applications the brand <br/>demands.
         </h2>
       </div>
 
