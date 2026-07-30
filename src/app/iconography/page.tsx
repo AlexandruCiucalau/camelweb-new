@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import TextArea from './components/TextArea';
 import ImageArea from './components/ImageArea';
 import Footer from '@/components/Footer';
-import Photography from './components/Photography';
+import NextSection from '@/components/Applications';
 
 export default function IconographyPage() {
   return (
@@ -18,7 +18,7 @@ export default function IconographyPage() {
             symbol, tying it all together in <br />
             a suble, yet effective way.
           </>
-    
+
         }
         scrollTargetId="image-section"
         prevHref="/"
@@ -29,12 +29,11 @@ export default function IconographyPage() {
           { href: "/iconography", label: "Iconography" },
           { href: "#contact", label: "Contact", external: true },
         ]}
-        labelPaddingTop="pt-20"
+        labelPaddingTop="pt-19"
       />
       <TextArea />
       <ImageArea />
-      <Photography />
-      <Footer />
+      <NextSection sectionId="photography-next" heading="Photography" href="/" />      <Footer />
     </main>
   );
 }

@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import LocationPhotography from '@/components/LocationPhotography';
 import PhotoGrid from '@/components/PhotoGrid';
-import Applications from '@/components/Applications';
+import NextSection from '@/components/Applications';
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
       />
       <LocationPhotography />
       <PhotoGrid />
-      <Applications />
+      <NextSection sectionId="applications" heading="Applications" href="/applications" />
       <Footer />
     </main>
   );

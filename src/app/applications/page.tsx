@@ -26,7 +26,7 @@ export default function ApplicationsPage() {
           { href: "/iconography", label: "Iconography" },
           { href: "#contact", label: "Contact", external: true },
         ]}
-        labelPaddingTop="pt-20"
+        labelPaddingTop="pt-19"
       />
       <ImageSection />
       <Footer />
