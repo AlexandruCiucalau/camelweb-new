@@ -1,4 +1,3 @@
-import { useState  } from "react";
 import { Syne } from 'next/font/google';
 import { Poppins } from 'next/font/google';
 const syneFont = Syne({

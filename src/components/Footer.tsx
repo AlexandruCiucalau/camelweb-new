@@ -1,5 +1,3 @@
-import { useState  } from "react";
-
 import { Open_Sans, Syne } from 'next/font/google';
 
 const openSans = Open_Sans({
