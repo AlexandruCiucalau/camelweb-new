@@ -20,9 +20,9 @@ export default function IconographyPage() {
           </>
 
         }
-        scrollTargetId="text-area"
-        prevHref="/"
-        nextHref="/applications"
+        scrollTargetId="image-section"
+        prevHref="/applications"
+        nextHref="/"
         navLinks={[
           { href: "/", label: "Photography" },
           { href: "/applications", label: "Applications" },

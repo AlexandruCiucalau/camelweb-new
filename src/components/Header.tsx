@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 type NavLink = {
   href: string;
   label: string;
-  external?: boolean; // true for anchor links like "#contact", false for real routes
+  external?: boolean;
 };
 
 type HeaderProps = {
@@ -17,7 +17,7 @@ type HeaderProps = {
   prevHref: string;
   nextHref: string;
   navLinks: NavLink[];
-  labelPaddingTop: string; // no default, no `?` — every page must pass this
+  labelPaddingTop: string;
 };
 
 export default function Header({
@@ -27,7 +27,7 @@ export default function Header({
   prevHref,
   nextHref,
   navLinks,
-  labelPaddingTop = "pt-37", // NEW — default matches what you already have
+  labelPaddingTop,
 }: HeaderProps) {
   const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);

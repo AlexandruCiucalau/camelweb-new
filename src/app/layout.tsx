@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { syne, poppins, openSans } from "./fonts";
 import "./globals.css";
 
@@ -17,6 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${syne.variable} ${poppins.variable} ${openSans.variable} antialiased`}>
         {children}
+      
       </body>
     </html>
   );
