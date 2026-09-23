@@ -20,7 +20,7 @@ export default function IconographyPage() {
           </>
 
         }
-        scrollTargetId="image-section"
+        scrollTargetId="text-area"
         prevHref="/"
         nextHref="/applications"
         navLinks={[
