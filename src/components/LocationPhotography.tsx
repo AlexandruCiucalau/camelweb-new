@@ -1,15 +1,3 @@
-import { Syne } from 'next/font/google';
-import { Poppins } from 'next/font/google';
-const syneFont = Syne({
-  subsets: ["latin"],
-  weight: ['400', '500', '600', '700'],
-});
-const poppinsFont = Poppins({
-  subsets: ["latin"],
-  weight: ['400', '500', '600', '700'],
-});
-
-
 export default function LocationPhotography () {
   return (
     < section id="photography-section" className="bg-white" >
@@ -19,10 +7,10 @@ export default function LocationPhotography () {
         <div className="h-[1.5] mx-auto bg-camel-500 mt-18 mb-3 "></div>
 
         {/* Heading */}
-        <h4 className={`text-[30px] font-semibold text-camel-500 mb-13 ${syneFont.className}`}>Location photography</h4>
+        <h4 className="text-[30px] font-semibold text-camel-500 mb-13 font-syne">Location photography</h4>
 
         {/* Description */}
-        <div className={`mb-8 text-xl tracking-tight font-medium ${poppinsFont.className}`}>
+        <div className="mb-8 text-xl tracking-tight font-medium font-poppins">
           <p className={`text-gray-700 leading-tight -mb-2`}>
             The location photography aims to show the CamelWeb offices and employees in order to <br/>communicate the brand&apos;s values.
           </p>

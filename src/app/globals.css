@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 @theme {
+
+  --font-syne: var(--font-syne);
+  --font-poppins: var(--font-poppins);
+  --font-open-sans: var(--font-open-sans);
+
   --color-camel-500: #EF582B;
   --color-black-iconography: #1B1918;
 }

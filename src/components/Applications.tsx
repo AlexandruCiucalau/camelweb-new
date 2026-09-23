@@ -1,14 +1,4 @@
-import { Poppins, Syne } from 'next/font/google';
 import Link from 'next/link';
-
-const poppinsFont = Poppins({
-  subsets: ["latin"],
-  weight: ['400', '500', '600', '700'],
-});
-const syneFont = Syne({
-  subsets: ["latin"],
-  weight: ['400', '500', '600', '700'],
-});
 
 type NextSectionProps = {
   sectionId: string;
@@ -24,10 +14,10 @@ export default function NextSection({ sectionId, heading, href }: NextSectionPro
           <div className="h-px bg-black"></div>
         </div>
         <div>
-          <p className={`text-medium mb-1 mt-4 text-[13px] font-normal ${poppinsFont.className}`}>Next</p>
+          <p className={`text-medium mb-1 mt-4 text-[13px] font-normal font-poppins`}>Next</p>
 
           <div className="flex items-center justify-between">
-            <h4 className={`text-4xl font-semibold text-black tracking-tight text-[30px] ${syneFont.className}`}>
+            <h4 className={`text-4xl font-semibold text-black tracking-tight text-[30px] font-syne`}>
               {heading}
             </h4>
             <Link href={href} className="text-black hover:text-gray-600 transition-colors lg:mr-7 mt-3">

@@ -1,15 +1,3 @@
-import { useState  } from "react";
-import { Syne } from 'next/font/google';
-import { Poppins } from 'next/font/google';
-const syneFont = Syne({
-  subsets: ["latin"],
-  weight: ['400', '500', '600', '700'],
-});
-const poppinsFont = Poppins({
-  subsets: ["latin"],
-  weight: ['400', '500', '600', '700'],
-});
-
 export default function TextArea() {
   return (
     <section id="text-area">
@@ -17,13 +5,13 @@ export default function TextArea() {
         <div className="h-[1.5px] mx-auto bg-camel-500 mt-18 mb-3"></div>
 
         <h4
-          className={`text-[30px] font-semibold leading-[33px] text-camel-500 mb-13 ${syneFont.className}`}
+          className={`text-[30px] font-semibold leading-[33px] text-camel-500 mb-13 font-syne`}
         >
           Iconography
         </h4>
 
         <p
-          className={`text-[20px] font-normal leading-[22px] ${poppinsFont.className}`}
+          className={`text-[20px] font-normal leading-[22px] font-poppins`}
         >
           We use icons that resonate with CamelWeb&apos;s brand identity,
           representing elements like the <br />
@@ -47,7 +35,7 @@ export default function TextArea() {
             </svg>
 
             <p
-              className={`text-[20px] font-normal leading-[22px] ${poppinsFont.className}`}
+              className={`text-[20px] font-normal leading-[22px] font-poppins`}
             >
               We only use simple, pixelated icons.
             </p>
@@ -67,7 +55,7 @@ export default function TextArea() {
             </svg>
 
             <p
-              className={`text-[20px] font-normal leading-[22px] ${poppinsFont.className}`}
+              className={`text-[20px] font-normal leading-[22px] font-poppins`}
             >
               The pixels must be solid colored and completely filled.
             </p>
@@ -87,7 +75,7 @@ export default function TextArea() {
             </svg>
 
             <p
-              className={`text-[20px] font-normal leading-[22px] ${poppinsFont.className}`}
+              className={`text-[20px] font-normal leading-[22px] font-poppins`}
             >
               The primary color used for the icons is black.
             </p>

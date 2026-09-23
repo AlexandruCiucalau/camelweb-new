@@ -1,20 +1,7 @@
-import { Open_Sans, Syne } from 'next/font/google';
-
-const openSans = Open_Sans({
-  subsets: ["latin"],
-  weight: ['400', '500', '600', '700'],
-})
-
-const syneFont = Syne({
-  subsets: ["latin"],
-  weight: ['400', '500', '600', '700'],
-});
-
-
 export default function Footer () {
   return (
     <footer id="about" className="bg-gray-50 border-t border-gray-200">
-      <div className={`px-4 py-8 sm:px-6 md:px-12 lg:px-16 py-8 max-w-[1366px] mx-auto  tracking-tight ${openSans.className}`}>
+      <div className={`px-4 py-8 sm:px-6 md:px-12 lg:px-16 py-8 max-w-[1366px] mx-auto  tracking-tight font-open-sans`}>
         {/* Main Footer Content */}
         <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
           {/* Logo/Brand */}

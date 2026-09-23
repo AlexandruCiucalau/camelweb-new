@@ -3,9 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Syne } from "next/font/google";
-
-const syneFont = Syne({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 type NavLink = {
   href: string;
@@ -38,7 +35,7 @@ export default function Header({
   return (
     <header className="bg-camel-500 text-white relative lg:h-[768px]">
       <div className="flex items-center justify-between lg:px-15 px-6 py-6 max-w-[1366px] mx-auto">
-        <Link href="/" className={`text-2xl font-bold tracking-wide ${syneFont.className}`}>
+        <Link href="/" className={`text-2xl font-bold tracking-wide font-syne`}>
           CAMELWEB
         </Link>
 
@@ -75,12 +72,12 @@ export default function Header({
 
       <div className="px-4 lg:px-0">
         <h4
-          className={`mx-auto w-full max-w-[1032px] ${labelPaddingTop} text-center text-[30px] font-semibold leading-[1.1] ${syneFont.className}`}
+          className={`mx-auto w-full max-w-[1032px] ${labelPaddingTop} text-center text-[30px] font-semibold leading-[1.1] font-syne`}
         >
           {label}
         </h4>
         <h2
-          className={`mx-auto w-full max-w-[1032px] mt-13 text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-[1.1] ${syneFont.className}`}
+          className={`mx-auto w-full max-w-[1032px] mt-13 text-center text-4xl sm:text-6xl lg:text-[67px] font-semibold leading-[1.1] font-syne`}
         >
           {headline}
         </h2>

@@ -1,21 +1,9 @@
-import { useState } from "react";
 import type { ReactNode } from "react";
-import { Syne } from 'next/font/google';
-import { Poppins } from 'next/font/google';
 
 type SpecLabelProps = {
     children: ReactNode;
     start?: boolean;
 };
-
-const syneFont = Syne({
-    subsets: ["latin"],
-    weight: ['400', '500', '600', '700'],
-});
-const poppinsFont = Poppins({
-    subsets: ["latin"],
-    weight: ['400', '500', '600', '700'],
-});
 
 const icons = [
     {
@@ -58,7 +46,7 @@ type RowProps = {
 function SpecLabel({ children, start = false }: SpecLabelProps) {
     return (
         <p
-            className={`${poppinsFont.className} w-[59px] h-[44px] text-center text-[20px] leading-[110%] text-black-iconography ${start ? "" : "ml-6"
+            className={`w-[59px] h-[44px] text-center text-[20px] leading-[110%] text-black-iconography font-poppins${start ? "" : "ml-6"
                 }`}
         >
             {children}
