@@ -26,7 +26,7 @@ export default function IconographyPage() {
           { href: "/", label: "Photography" },
           { href: "/applications", label: "Applications" },
           { href: "/iconography", label: "Iconography" },
-          { href: "#contact", label: "Contact", external: true },
+          { href: "#contact", label: "Contact"},
         ]}
         labelPaddingTop="pt-19"
       />

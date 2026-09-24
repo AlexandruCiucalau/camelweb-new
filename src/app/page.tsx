@@ -15,10 +15,10 @@ export default function Home() {
         prevHref="/iconography"
         nextHref="/applications"
         navLinks={[
-          { href: "#photo-grid", label: "Photography", external: true },
+          { href: "#photo-grid", label: "Photography"},
           { href: "/applications", label: "Applications" },
           { href: "/iconography", label: "Iconography" },
-          { href: "#contact", label: "Contact", external: true },
+          { href: "#contact", label: "Contact"},
         ]}
         labelPaddingTop="pt-37"
       />

@@ -50,15 +50,11 @@ export default function Header({
             <div className="absolute lg:-right-14 -right-4 mt-3 bg-camel-500 border border-white/20 shadow-lg rounded-md">
               <nav className="py-2">
                 {navLinks.map((link) =>
-                  link.external ? (
-                    <Link key={link.href} href={link.href} className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">
-                      {link.label}
-                    </Link>
-                  ) : (
-                    <Link key={link.href} href={link.href} className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">
-                      {link.label}
-                    </Link>
-                  )
+
+                  <Link key={link.href} href={link.href} className="block px-6 py-2 text-white hover:bg-white/10 hover:text-gray-200">
+                    {link.label}
+                  </Link>
+
                 )}
               </nav>
             </div>
