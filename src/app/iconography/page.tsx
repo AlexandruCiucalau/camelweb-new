@@ -1,4 +1,3 @@
-"use client";
 import Header from '@/components/Header';
 import TextArea from './components/TextArea';
 import ImageArea from './components/ImageArea';
@@ -20,7 +19,7 @@ export default function IconographyPage() {
           </>
 
         }
-        scrollTargetId="image-section"
+        scrollTargetId="text-area"
         prevHref="/applications"
         nextHref="/"
         navLinks={[
