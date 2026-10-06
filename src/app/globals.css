@@ -8,4 +8,8 @@
 
   --color-camel-500: #EF582B;
   --color-black-iconography: #1B1918;
+
+  --spacing-photo-w: 609px;
+  --spacing-photo-h: 411px;
+  --spacing-photo-bottom-h: 702px;
 }
